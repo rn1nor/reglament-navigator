@@ -1,0 +1,517 @@
+{
+ "outcome": "out_of_scope",
+ "question": "Какая погода будет в Долгопрудном на выходных?",
+ "role": null,
+ "as_of": "2026-11-14",
+ "summary": "Вопрос не относится к внутренним регламентам и приказам, по которым работает навигатор.",
+ "steps": [],
+ "conditions": [],
+ "not_covered": [],
+ "documents": [],
+ "checked_documents": [
+  {
+   "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+   "title": "График учебного процесса на 2023-2024 учебный год (с изменениями и дополнениями)",
+   "doc_type": "приказ",
+   "number": "5349",
+   "date": "2023-12-26",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/eie/Grafik_uchebnogo_processa_na_2023-2024_uchebnyi_god_s_izmeneniyami_28.06.2024.pdf",
+   "source_path": "data/raw/mipt/Grafik_uchebnogo_processa_na_2023-2024_uchebnyi_god_s_izmeneniyami_28.06.2024_0a24a5af.pdf",
+   "topics": [
+    "Учебный процесс и аттестация",
+    "Наука, аспирантура и гранты"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  },
+  {
+   "doc_id": "prikaz_no_2301_1_ot_13_05_2026_34f7194d-1db5b9",
+   "title": "Об утверждении типовых форм договоров об образовании",
+   "doc_type": "приказ",
+   "number": "2301-1",
+   "date": "2026-05-13",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/eiy/Prikaz_No_2301-1_ot_13.05.2026.pdf",
+   "source_path": "data/raw/mipt/Prikaz_No_2301-1_ot_13.05.2026_34f7194d.pdf",
+   "topics": [
+    "Наука, аспирантура и гранты",
+    "Учебный процесс и аттестация",
+    "Стоимость обучения и платные услуги"
+   ],
+   "owner_unit": "проректора по учебной",
+   "date_partial": false
+  },
+  {
+   "doc_id": "dogovor_prisoedineniya_forma_f1a93426-d6ae52",
+   "title": "Договор_присоединения_форма",
+   "doc_type": "договор",
+   "number": null,
+   "date": "2026-08-04",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/aim/Dogovor_prisoedineniya_forma.pdf",
+   "source_path": "data/raw/mipt/Dogovor_prisoedineniya_forma_f1a93426.pdf",
+   "topics": [
+    "Стоимость обучения и платные услуги",
+    "Персональные данные и ИБ",
+    "Учебный процесс и аттестация"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  },
+  {
+   "doc_id": "prikaz_no_3674_1_ot_22_07_2026_0231dc6e-ffef98",
+   "title": "Об утверждении типовых форм договоров об образовании",
+   "doc_type": "приказ",
+   "number": "3674-1",
+   "date": "2026-07-22",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/ril/Prikaz_No_3674-1_ot_22.07.2026.pdf",
+   "source_path": "data/raw/mipt/Prikaz_No_3674-1_ot_22.07.2026_0231dc6e.pdf",
+   "topics": [
+    "Наука, аспирантура и гранты",
+    "Стоимость обучения и платные услуги",
+    "Учебный процесс и аттестация"
+   ],
+   "owner_unit": "проректора по учебной",
+   "date_partial": false
+  },
+  {
+   "doc_id": "grafik_up_na_sait_s_izmeneniyami_2f4f7ccc-3c481f",
+   "title": "График учебного процесса на 2026-2027 учебный год (с изменениями и дополнениями)",
+   "doc_type": "приказ",
+   "number": null,
+   "date": null,
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/ziy/Grafik_UP_na_sait_s_izmeneniyami.pdf",
+   "source_path": "data/raw/mipt/Grafik_UP_na_sait_s_izmeneniyami_2f4f7ccc.pdf",
+   "topics": [
+    "Учебный процесс и аттестация"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  }
+ ],
+ "clarifying_question": null,
+ "clarifying_options": [],
+ "responsible": null,
+ "forms": [],
+ "deadlines": [],
+ "trust": {
+  "checks": [
+   {
+    "name": "Цитаты указывают на переданные пункты",
+    "passed": true,
+    "detail": "цитат нет"
+   },
+   {
+    "name": "Текст цитат совпадает с документом",
+    "passed": true,
+    "detail": "все совпали"
+   },
+   {
+    "name": "Документы действуют на дату запроса",
+    "passed": true,
+    "detail": "2026-11-14"
+   },
+   {
+    "name": "Редакция пунктов актуальна",
+    "passed": true,
+    "detail": "поправок к процитированным пунктам нет"
+   },
+   {
+    "name": "Качество распознавания текста",
+    "passed": true,
+    "detail": "текстовый слой"
+   },
+   {
+    "name": "Шаги подтверждены документами",
+    "passed": true,
+    "detail": "подтверждено 0, частично 0, отброшено 0"
+   },
+   {
+    "name": "Уверенность поиска",
+    "passed": false,
+    "detail": "rerank=0.00"
+   },
+   {
+    "name": "Противоречий с другими действующими пунктами не найдено",
+    "passed": true,
+    "detail": "по списку кандидатов паспорта базы"
+   }
+  ],
+  "supported_steps": 0,
+  "total_steps": 0,
+  "dropped_steps": [],
+  "warnings": [],
+  "verified_by_human": null
+ },
+ "trace": {
+  "provider": "mock",
+  "embedder": "BAAI/bge-m3",
+  "confidential": false,
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "query": {
+   "intent": "Какая погода будет в Долгопрудном на выходных?",
+   "role": null,
+   "role_confidence": 0.0,
+   "mentioned_documents": [],
+   "as_of": null,
+   "situation_dates": [],
+   "reformulations": [
+    "академическая задолженность"
+   ],
+   "keywords": [
+    "какая",
+    "погода",
+    "будет",
+    "долгопрудном",
+    "выходных"
+   ],
+   "out_of_scope": true,
+   "out_of_scope_reason": "вопрос не относится к внутренним регламентам"
+  },
+  "queries": [
+   "Какая погода будет в Долгопрудном на выходных?",
+   "академическая задолженность"
+  ],
+  "method": "rerank",
+  "decision": {
+   "outcome": "out_of_scope",
+   "reason": "вопрос не относится к внутренним регламентам",
+   "gate_ok": false,
+   "gate_value": 0.00010319870489183813,
+   "gate_kind": "rerank"
+  },
+  "hits": [
+   {
+    "doc_id": "prikaz_no_2301_1_ot_13_05_2026_34f7194d-1db5b9",
+    "clause_id": "1.1#3",
+    "rrf": 0.0241,
+    "bm25": 3.79,
+    "dense": 0.363,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "2.5",
+    "rrf": 0.0354,
+    "bm25": 5.75,
+    "dense": 0.378,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "4.6",
+    "rrf": 0.025,
+    "bm25": 3.61,
+    "dense": 0.373,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "prikaz_no_2301_1_ot_13_05_2026_34f7194d-1db5b9",
+    "clause_id": "p3",
+    "rrf": 0.0283,
+    "bm25": 4.85,
+    "dense": 0.425,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "dogovor_prisoedineniya_forma_f1a93426-d6ae52",
+    "clause_id": "11",
+    "rrf": 0.0241,
+    "bm25": 7.42,
+    "dense": 0.329,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "3",
+    "rrf": 0.0258,
+    "bm25": 5.18,
+    "dense": 0.373,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "prikaz_no_3674_1_ot_22_07_2026_0231dc6e-ffef98",
+    "clause_id": "p5@Прил.4",
+    "rrf": 0.0287,
+    "bm25": 5.1,
+    "dense": 0.44,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "grafik_up_na_sait_s_izmeneniyami_2f4f7ccc-3c481f",
+    "clause_id": "5",
+    "rrf": 0.0247,
+    "bm25": 5.13,
+    "dense": 0.362,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "graf_2025_2026_f5211ffe-88a885",
+    "clause_id": "4.2",
+    "rrf": 0.0258,
+    "bm25": 3.21,
+    "dense": 0.388,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "1.2",
+    "rrf": 0.0235,
+    "bm25": 3.92,
+    "dense": 0.357,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "3_x_storonnii_dogovor_na_obuchenie_detei_po_dopo-ec9765",
+    "clause_id": "p2",
+    "rrf": 0.0271,
+    "bm25": 5.92,
+    "dense": 0.368,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "kollektivnyy_dogovor_2023_20_poisk_kachestvo_1_6-30dea3",
+    "clause_id": "6",
+    "rrf": 0.0271,
+    "bm25": 5.79,
+    "dense": 0.369,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "5.9",
+    "rrf": 0.0305,
+    "bm25": 7.32,
+    "dense": 0.401,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "prikaz_no_2301_1_ot_13_05_2026_34f7194d-1db5b9",
+    "clause_id": "1.2#3",
+    "rrf": 0.029,
+    "bm25": 6.24,
+    "dense": 0.389,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "contract_offer_31533234-6f23b1",
+    "clause_id": "13",
+    "rrf": 0.0236,
+    "bm25": 5.43,
+    "dense": 0.343,
+    "rerank": 0.0
+   }
+  ],
+  "context_units": [
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "1.1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "1.2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "1.3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "2.1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "2.2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "2.3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "2.4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "2.5",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "3",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "4.1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "4.2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "4.3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "4.4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "4.5",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "4.6",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_no_2301_1_ot_13_05_2026_34f7194d-1db5b9",
+    "clause_id": "1.1#3",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_no_2301_1_ot_13_05_2026_34f7194d-1db5b9",
+    "clause_id": "1.2#3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_no_2301_1_ot_13_05_2026_34f7194d-1db5b9",
+    "clause_id": "1.3#2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_no_2301_1_ot_13_05_2026_34f7194d-1db5b9",
+    "clause_id": "p3",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "dogovor_prisoedineniya_forma_f1a93426-d6ae52",
+    "clause_id": "1",
+    "reason": "reference"
+   },
+   {
+    "doc_id": "dogovor_prisoedineniya_forma_f1a93426-d6ae52",
+    "clause_id": "10.1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "dogovor_prisoedineniya_forma_f1a93426-d6ae52",
+    "clause_id": "10.2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "dogovor_prisoedineniya_forma_f1a93426-d6ae52",
+    "clause_id": "10.3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "dogovor_prisoedineniya_forma_f1a93426-d6ae52",
+    "clause_id": "10.4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "dogovor_prisoedineniya_forma_f1a93426-d6ae52",
+    "clause_id": "10.5",
+    "reason": "section"
+   },
+   {
+    "doc_id": "dogovor_prisoedineniya_forma_f1a93426-d6ae52",
+    "clause_id": "10.6",
+    "reason": "section"
+   },
+   {
+    "doc_id": "dogovor_prisoedineniya_forma_f1a93426-d6ae52",
+    "clause_id": "11",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_no_3674_1_ot_22_07_2026_0231dc6e-ffef98",
+    "clause_id": "p5@Прил.4",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "grafik_up_na_sait_s_izmeneniyami_2f4f7ccc-3c481f",
+    "clause_id": "2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_up_na_sait_s_izmeneniyami_2f4f7ccc-3c481f",
+    "clause_id": "3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_up_na_sait_s_izmeneniyami_2f4f7ccc-3c481f",
+    "clause_id": "4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_up_na_sait_s_izmeneniyami_2f4f7ccc-3c481f",
+    "clause_id": "5",
+    "reason": "hit"
+   }
+  ],
+  "deadline_rules": [],
+  "draft": {
+   "answerable": "no",
+   "summary": "Найденные пункты слабо связаны с вопросом: подтверждающего регламента в базе нет.",
+   "applicable_documents": [],
+   "steps": [],
+   "conditions": [],
+   "not_covered": [],
+   "role_branches": [],
+   "clarifying_question": null,
+   "clarifying_options": [],
+   "responsible": null,
+   "forms": [],
+   "deadlines": []
+  }
+ },
+ "timings_ms": {
+  "understand": 0,
+  "retrieve": 6140,
+  "generate": 0,
+  "verify": 0
+ }
+}

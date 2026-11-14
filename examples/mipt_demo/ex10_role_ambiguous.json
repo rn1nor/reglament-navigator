@@ -1,0 +1,468 @@
+{
+ "outcome": "refuse",
+ "question": "Как оформить отпуск?",
+ "role": null,
+ "as_of": "2026-11-14",
+ "summary": "В базе не найден регламент или приказ, подтверждающий ответ на этот вопрос. Проверены ближайшие по теме документы: ПОЛОЖЕНИЕ о предоставлении академического и других видов отпусков обучающимся МФ (действует (с изменениями)); Приказ «Об утверждении Правил внутреннего трудового распорядка МФТИ» (действует); КОЛЛЕКТИВНЫЙ ДОГОВОР между администрацией и коллективом федерального государстве (действует). Найденные пункты слабо связаны с вопросом: подтверждающего регламента в базе нет.",
+ "steps": [],
+ "conditions": [],
+ "not_covered": [],
+ "documents": [],
+ "checked_documents": [
+  {
+   "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+   "title": "ПОЛОЖЕНИЕ о предоставлении академического и других видов отпусков обучающимся МФТИ",
+   "doc_type": "положение",
+   "number": null,
+   "date": "2025-09-01",
+   "status": "active",
+   "status_reason": "действует с изменениями: Приказ № 5999-1 от 10.11.2026 «О внесении изменений в Положение о предоставлении академического и других видов отпусков о»",
+   "amended_by": [
+    "prikaz_demo_5999_1_izmeneniya-cde575"
+   ],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/eib/Prikaz_N_3909-1_ot_01.09.2025_(AO).pdf",
+   "source_path": "data/raw/mipt/Prikaz_N_3909-1_ot_01.09.2025__AO_9c6a0016.pdf",
+   "topics": [
+    "Движение контингента",
+    "Учебный процесс и аттестация",
+    "Наука, аспирантура и гранты"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  },
+  {
+   "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+   "title": "Об утверждении Правил внутреннего трудового распорядка МФТИ",
+   "doc_type": "приказ",
+   "number": null,
+   "date": null,
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/ziu/Pravila_vnutrennego_rasporyadka_2020.pdf",
+   "source_path": "data/raw/mipt/Pravila_vnutrennego_rasporyadka_2020_b658fb23.pdf",
+   "topics": [
+    "Кадры и трудовые отношения",
+    "Дисциплина и споры",
+    "Имущество и охрана труда"
+   ],
+   "owner_unit": "первого проректора",
+   "date_partial": false
+  },
+  {
+   "doc_id": "kollektivnyy_dogovor_2023_20_poisk_kachestvo_1_6-30dea3",
+   "title": "КОЛЛЕКТИВНЫЙ ДОГОВОР между администрацией и коллективом федерального государственного автономного образовательного учреждения высшего образования «Московский физико-технический институт (национальный исследовательский университет)»",
+   "doc_type": "договор",
+   "number": null,
+   "date": "2023-01-01",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/Kollektivnyy_dogovor_2023-20...poisk_kachestvo(1).pdf",
+   "source_path": "data/raw/mipt/Kollektivnyy_dogovor_2023-20...poisk_kachestvo_1_616a2b93.pdf",
+   "topics": [
+    "Оплата труда и выплаты",
+    "Управление и структура",
+    "Кадры и трудовые отношения"
+   ],
+   "owner_unit": null,
+   "date_partial": true
+  }
+ ],
+ "clarifying_question": null,
+ "clarifying_options": [],
+ "responsible": null,
+ "forms": [],
+ "deadlines": [],
+ "trust": {
+  "checks": [
+   {
+    "name": "Цитаты указывают на переданные пункты",
+    "passed": true,
+    "detail": "цитат нет"
+   },
+   {
+    "name": "Текст цитат совпадает с документом",
+    "passed": true,
+    "detail": "все совпали"
+   },
+   {
+    "name": "Документы действуют на дату запроса",
+    "passed": true,
+    "detail": "2026-11-14"
+   },
+   {
+    "name": "Редакция пунктов актуальна",
+    "passed": true,
+    "detail": "поправок к процитированным пунктам нет"
+   },
+   {
+    "name": "Качество распознавания текста",
+    "passed": true,
+    "detail": "текстовый слой"
+   },
+   {
+    "name": "Шаги подтверждены документами",
+    "passed": true,
+    "detail": "подтверждено 0, частично 0, отброшено 0"
+   },
+   {
+    "name": "Уверенность поиска",
+    "passed": false,
+    "detail": "rerank=0.17"
+   },
+   {
+    "name": "Противоречий с другими действующими пунктами не найдено",
+    "passed": true,
+    "detail": "по списку кандидатов паспорта базы"
+   }
+  ],
+  "supported_steps": 0,
+  "total_steps": 0,
+  "dropped_steps": [],
+  "warnings": [],
+  "verified_by_human": null
+ },
+ "trace": {
+  "provider": "mock",
+  "embedder": "BAAI/bge-m3",
+  "confidential": false,
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "query": {
+   "intent": "Как оформить отпуск?",
+   "role": null,
+   "role_confidence": 0.0,
+   "mentioned_documents": [],
+   "as_of": null,
+   "situation_dates": [],
+   "reformulations": [
+    "ежегодный оплачиваемый отпуск",
+    "предоставление отпуска",
+    "график отпусков"
+   ],
+   "keywords": [
+    "оформить",
+    "отпуск"
+   ],
+   "out_of_scope": false,
+   "out_of_scope_reason": null
+  },
+  "queries": [
+   "Как оформить отпуск?",
+   "ежегодный оплачиваемый отпуск",
+   "предоставление отпуска",
+   "график отпусков"
+  ],
+  "method": "rerank",
+  "decision": {
+   "outcome": "refuse",
+   "reason": "в базе нет пункта, подтверждающего ответ",
+   "gate_ok": false,
+   "gate_value": 0.1707085520029068,
+   "gate_kind": "rerank"
+  },
+  "hits": [
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.8",
+    "rrf": 0.0895,
+    "bm25": 12.19,
+    "dense": 0.662,
+    "rerank": 0.171
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.5",
+    "rrf": 0.1001,
+    "bm25": 18.59,
+    "dense": 0.645,
+    "rerank": 0.163
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "1.4.-3",
+    "rrf": 0.1102,
+    "bm25": 11.86,
+    "dense": 0.672,
+    "rerank": 0.15
+   },
+   {
+    "doc_id": "kollektivnyy_dogovor_2023_20_poisk_kachestvo_1_6-30dea3",
+    "clause_id": "6",
+    "rrf": 0.083,
+    "bm25": 13.66,
+    "dense": 0.632,
+    "rerank": 0.139
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3.7",
+    "rrf": 0.1023,
+    "bm25": 11.66,
+    "dense": 0.674,
+    "rerank": 0.125
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.4",
+    "rrf": 0.0933,
+    "bm25": 18.79,
+    "dense": 0.619,
+    "rerank": 0.099
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.10",
+    "rrf": 0.073,
+    "bm25": 10.67,
+    "dense": 0.649,
+    "rerank": 0.079
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3.3",
+    "rrf": 0.09,
+    "bm25": 11.94,
+    "dense": 0.643,
+    "rerank": 0.059
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.3",
+    "rrf": 0.0823,
+    "bm25": 11.95,
+    "dense": 0.649,
+    "rerank": 0.029
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.5#2",
+    "rrf": 0.0707,
+    "bm25": 10.29,
+    "dense": 0.651,
+    "rerank": 0.028
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.5",
+    "rrf": 0.0741,
+    "bm25": 12.12,
+    "dense": 0.647,
+    "rerank": 0.021
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "1.8",
+    "rrf": 0.0702,
+    "bm25": 10.61,
+    "dense": 0.615,
+    "rerank": 0.013
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.1",
+    "rrf": 0.0808,
+    "bm25": 9.24,
+    "dense": 0.653,
+    "rerank": 0.01
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.9",
+    "rrf": 0.0815,
+    "bm25": 6.74,
+    "dense": 0.621,
+    "rerank": 0.009
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3.1",
+    "rrf": 0.0936,
+    "bm25": 11.61,
+    "dense": 0.645,
+    "rerank": 0.008
+   }
+  ],
+  "context_units": [
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "1.4.-1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "1.4.-2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "1.4.-3",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.6",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.8",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.5#2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.9",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.10",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3.1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3.2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3.3",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3.4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3.5",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3.6",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3.7",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "3.8",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "p2@Прил.1",
+    "reason": "attachment"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.4",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.5",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.6",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.7",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.8",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.9",
+    "reason": "section"
+   },
+   {
+    "doc_id": "kollektivnyy_dogovor_2023_20_poisk_kachestvo_1_6-30dea3",
+    "clause_id": "5",
+    "reason": "section"
+   },
+   {
+    "doc_id": "kollektivnyy_dogovor_2023_20_poisk_kachestvo_1_6-30dea3",
+    "clause_id": "6",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_demo_5999_1_izmeneniya-cde575",
+    "clause_id": "1.1",
+    "reason": "amendment"
+   },
+   {
+    "doc_id": "prikaz_demo_5999_1_izmeneniya-cde575",
+    "clause_id": "1.2",
+    "reason": "amendment"
+   }
+  ],
+  "deadline_rules": [],
+  "draft": {
+   "answerable": "no",
+   "summary": "Найденные пункты слабо связаны с вопросом: подтверждающего регламента в базе нет.",
+   "applicable_documents": [],
+   "steps": [],
+   "conditions": [],
+   "not_covered": [],
+   "role_branches": [],
+   "clarifying_question": null,
+   "clarifying_options": [],
+   "responsible": null,
+   "forms": [],
+   "deadlines": []
+  }
+ },
+ "timings_ms": {
+  "understand": 0,
+  "retrieve": 4882,
+  "generate": 0,
+  "verify": 0
+ }
+}

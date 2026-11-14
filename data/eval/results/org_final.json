@@ -1,0 +1,76 @@
+{
+ "n": 42,
+ "outcome_accuracy": 1.0,
+ "doc_recall@5": 1.0,
+ "retrieval_recall@1": 1.0,
+ "retrieval_recall@3": 1.0,
+ "retrieval_recall@5": 1.0,
+ "retrieval_recall@10": 1.0,
+ "retrieval_mrr@10": 1.0,
+ "retrieval_ndcg@10": 0.872,
+ "cited_doc_precision": 0.984,
+ "step_groundedness": 1.0,
+ "citation_validity": 1.0,
+ "false_answer_rate_E": 0.0,
+ "over_refusal_A": 0.0,
+ "cancelled_leak_D": 0.0,
+ "cancelled_notice_D": 0.667,
+ "clarify_rate_F": 1.0,
+ "outcome_accuracy_C": 1.0,
+ "latency_p50_ms": 3501,
+ "latency_p95_ms": 7555,
+ "by_type": {
+  "A": {
+   "n": 22,
+   "outcome_accuracy": 1.0,
+   "doc_recall@5": 1.0
+  },
+  "B": {
+   "n": 3,
+   "outcome_accuracy": 1.0,
+   "doc_recall@5": 1.0
+  },
+  "C": {
+   "n": 5,
+   "outcome_accuracy": 1.0,
+   "doc_recall@5": 1.0
+  },
+  "D": {
+   "n": 3,
+   "outcome_accuracy": 1.0,
+   "doc_recall@5": 1.0
+  },
+  "E": {
+   "n": 8,
+   "outcome_accuracy": 1.0,
+   "doc_recall@5": null
+  },
+  "F": {
+   "n": 1,
+   "outcome_accuracy": 1.0,
+   "doc_recall@5": null
+  }
+ },
+ "confusion": {
+  "answer": {
+   "answer": 30
+  },
+  "cancelled_notice": {
+   "cancelled_notice": 2
+  },
+  "refuse": {
+   "refuse": 8
+  },
+  "out_of_scope": {
+   "out_of_scope": 1
+  },
+  "clarify": {
+   "clarify": 1
+  }
+ },
+ "label": "org_v4",
+ "provider": "mock",
+ "embedder": "BAAI/bge-m3",
+ "reranker": "BAAI/bge-reranker-v2-m3",
+ "run_at": "2026-11-14T17:37:10"
+}

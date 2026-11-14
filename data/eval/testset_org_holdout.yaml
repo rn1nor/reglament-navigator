@@ -1,0 +1,16 @@
+# Отложенный набор: вопросы написаны после настройки словаря синонимов и прогоняются без последующей подстройки.
+items:
+  - {id: H01, type: C, role: staff, question: "За чей счёт оплачивается гостиница в командировке и какие документы нужно привезти?", expected_outcome: answer, gold_docs: ["регламент_о_командировании"]}
+  - {id: H02, type: C, role: staff, question: "Командировку продлили на два дня, как это оформить и компенсируют ли новые билеты?", expected_outcome: answer, gold_docs: ["регламент_о_командировании"]}
+  - {id: H03, type: C, role: admin, question: "Объявление о вакансии висит две недели, а резюме нет. Что делает отдел подбора дальше?", expected_outcome: answer, gold_docs: ["регламент_поиска_и_подбора"]}
+  - {id: H04, type: C, role: staff, question: "Можно ли сотруднику жить в общежитии вместе с женой и ребёнком?", expected_outcome: answer, gold_docs: ["регламент_поселения"]}
+  - {id: H05, type: C, role: staff, question: "Что будет, если не платить за общежитие три месяца?", expected_outcome: answer, gold_docs: ["регламент_поселения"]}
+  - {id: H06, type: C, role: staff, question: "Во сколько и в какие дни работает служба техподдержки?", expected_outcome: answer, gold_docs: ["первой линии технической поддержки", "техподдер"]}
+  - {id: H07, type: C, role: admin, question: "Наш проект ведётся по гособоронзаказу, как открыть для него финансовый лицевой счёт?", expected_outcome: answer, gold_docs: ["приказ_n_3065_1"]}
+  - {id: H08, type: C, role: admin, question: "Кто визирует заявку на внутреннее заимствование?", expected_outcome: answer, gold_docs: ["приказ_5990_1"]}
+  - {id: H09, type: C, role: admin, question: "Какую плановую прибыль закладывать по научной деятельности при планировании бюджета на 2026 год?", expected_outcome: answer, gold_docs: ["приказ_n_3699_1"]}
+  - {id: H10, type: C, role: staff, question: "Кто отвечает за звук и свет на мероприятии в концертном зале?", expected_outcome: answer, gold_docs: ["регламент_бронирования"]}
+  - {id: H11, type: E, role: staff, question: "Как получить служебный автомобиль для поездки по Москве?", expected_outcome: refuse, gold_docs: []}
+  - {id: H12, type: E, role: staff, question: "Какой порядок оформления дистанционной работы сотрудника?", expected_outcome: refuse, gold_docs: []}
+  - {id: H13, type: E, role: admin, question: "Как списать устаревшее оборудование с баланса подразделения?", expected_outcome: refuse, gold_docs: []}
+  - {id: H14, type: D, question: "Что говорит приказ № 76-1 от 12.02.2015 о бланках для открытия ФЛС?", expected_outcome: answer, gold_docs: ["460-1", "460_1"], accept_partial: true}

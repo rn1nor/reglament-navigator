@@ -1,0 +1,110 @@
+# Навигатор по регламентам: запуск в Docker.
+#
+#   docker compose up -d --build                    интерфейс: http://localhost:8501
+#   docker compose --profile api up -d --build      интерфейс и API: http://localhost:8000/docs
+#   docker compose logs -f                          журнал запуска (режим поиска, база знаний)
+#   docker compose --profile api down               остановка и удаление контейнеров
+#
+# Файл .env необязателен: у всех переменных есть значения по умолчанию (описание в .env.example).
+# Пустое значение переменной NAVIGATOR_* равно её отсутствию: действует значение по умолчанию из navigator/config.py.
+
+x-navigator: &navigator
+  image: reglament-navigator:local
+  build:
+    context: .
+    args:
+      # 1 — скачать модели поиска в образ при сборке (после этого интернет не нужен); 0 — не скачивать
+      PRELOAD_MODELS: ${PRELOAD_MODELS:-1}
+      HF_ENDPOINT: ${HF_ENDPOINT:-https://huggingface.co}
+  init: true
+  restart: unless-stopped
+  volumes:
+    # документы, базы знаний, загрузки из интерфейса: всё остаётся на хосте в ./data
+    - ./data:/app/data
+    # модели поиска, скачанные при запуске (если их нет в образе)
+    - models:/models
+  extra_hosts:
+    # локальная модель на хосте доступна из контейнера как http://host.docker.internal:<порт>/v1
+    - "host.docker.internal:host-gateway"
+
+x-environment: &environment
+  # --- база знаний и папка документов, из которой она собирается при первом запуске, если базы нет
+  NAVIGATOR_KB: ${NAVIGATOR_KB:-/app/data/kb/org}
+  NAVIGATOR_RAW: ${NAVIGATOR_RAW:-/app/data/raw/org}
+  # --- поиск: auto | on | off. Значение auto уточняется при запуске по доступной памяти и наличию моделей
+  NAVIGATOR_USE_DENSE: ${NAVIGATOR_USE_DENSE:-auto}
+  NAVIGATOR_USE_RERANKER: ${NAVIGATOR_USE_RERANKER:-auto}
+  NAVIGATOR_EMBEDDING_MODEL: ${NAVIGATOR_EMBEDDING_MODEL:-}
+  NAVIGATOR_RERANKER_MODEL: ${NAVIGATOR_RERANKER_MODEL:-}
+  NAVIGATOR_TOP_K_CANDIDATES: ${NAVIGATOR_TOP_K_CANDIDATES:-}
+  NAVIGATOR_TOP_K_FINAL: ${NAVIGATOR_TOP_K_FINAL:-}
+  NAVIGATOR_MAX_CONTEXT_CHARS: ${NAVIGATOR_MAX_CONTEXT_CHARS:-}
+  HF_ENDPOINT: ${HF_ENDPOINT:-https://huggingface.co}
+  NAVIGATOR_MEM_FULL_MB: ${NAVIGATOR_MEM_FULL_MB:-}
+  NAVIGATOR_MEM_RERANK_MB: ${NAVIGATOR_MEM_RERANK_MB:-}
+  NAVIGATOR_MODEL_TIMEOUT: ${NAVIGATOR_MODEL_TIMEOUT:-}
+  # --- пороги отказа и проверки цитат
+  NAVIGATOR_GATE_MIN_RERANK: ${NAVIGATOR_GATE_MIN_RERANK:-}
+  NAVIGATOR_GATE_MIN_DENSE: ${NAVIGATOR_GATE_MIN_DENSE:-}
+  NAVIGATOR_GATE_MIN_HASH: ${NAVIGATOR_GATE_MIN_HASH:-}
+  NAVIGATOR_GATE_MIN_BM25_NORM: ${NAVIGATOR_GATE_MIN_BM25_NORM:-}
+  NAVIGATOR_QUOTE_MATCH: ${NAVIGATOR_QUOTE_MATCH:-}
+  NAVIGATOR_CLARIFY_GAP: ${NAVIGATOR_CLARIFY_GAP:-}
+  # --- распознавание сканов
+  NAVIGATOR_OCR: ${NAVIGATOR_OCR:-auto}
+  NAVIGATOR_OCR_DEBUG: ${NAVIGATOR_OCR_DEBUG:-}
+  # --- модель ответа: по умолчанию режим без модели; для закрытой базы допустима только локальная модель
+  NAVIGATOR_LLM: ${NAVIGATOR_LLM:-auto}
+  ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+  ANTHROPIC_AUTH_TOKEN: ${ANTHROPIC_AUTH_TOKEN:-}
+  NAVIGATOR_MODEL_GENERATOR: ${NAVIGATOR_MODEL_GENERATOR:-}
+  NAVIGATOR_MODEL_EXTRACTOR: ${NAVIGATOR_MODEL_EXTRACTOR:-}
+  NAVIGATOR_MODEL_JUDGE: ${NAVIGATOR_MODEL_JUDGE:-}
+  NAVIGATOR_EFFORT_GENERATOR: ${NAVIGATOR_EFFORT_GENERATOR:-}
+  NAVIGATOR_EFFORT_EXTRACTOR: ${NAVIGATOR_EFFORT_EXTRACTOR:-}
+  NAVIGATOR_EFFORT_JUDGE: ${NAVIGATOR_EFFORT_JUDGE:-}
+  NAVIGATOR_ANTHROPIC_FALLBACKS: ${NAVIGATOR_ANTHROPIC_FALLBACKS:-}
+  NAVIGATOR_OPENAI_BASE_URL: ${NAVIGATOR_OPENAI_BASE_URL:-}
+  NAVIGATOR_OPENAI_MODEL: ${NAVIGATOR_OPENAI_MODEL:-}
+  NAVIGATOR_OPENAI_API_KEY: ${NAVIGATOR_OPENAI_API_KEY:-}
+  NAVIGATOR_LLM_CACHE: ${NAVIGATOR_LLM_CACHE:-}
+  NAVIGATOR_ALLOW_EXTERNAL_LLM: ${NAVIGATOR_ALLOW_EXTERNAL_LLM:-}
+  # --- прочее
+  NAVIGATOR_TODAY: ${NAVIGATOR_TODAY:-}
+
+services:
+  # Интерфейс сотрудника и администратора (основной сервис)
+  ui:
+    <<: *navigator
+    environment:
+      <<: *environment
+      NAVIGATOR_SERVICE: ui
+    ports:
+      - "${NAVIGATOR_BIND:-0.0.0.0}:${NAVIGATOR_UI_PORT:-8501}:8501"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://127.0.0.1:8501/_stcore/health', timeout=8)"]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+      start_period: 900s
+
+  # API для интеграций: необязательный сервис (свой процесс со своими копиями моделей, поэтому включается отдельно)
+  api:
+    <<: *navigator
+    profiles: ["api"]
+    command: ["uvicorn", "navigator.api.app:app", "--host", "0.0.0.0", "--port", "8000"]
+    environment:
+      <<: *environment
+      NAVIGATOR_SERVICE: api
+    ports:
+      - "${NAVIGATOR_BIND:-0.0.0.0}:${NAVIGATOR_API_PORT:-8000}:8000"
+    healthcheck:
+      # лёгкая проверка: сервер отвечает; модели загружаются при первом запросе к /ask или /health
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://127.0.0.1:8000/openapi.json', timeout=8)"]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+      start_period: 900s
+
+volumes:
+  models:

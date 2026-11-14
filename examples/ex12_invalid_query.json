@@ -1,0 +1,36 @@
+{
+ "outcome": "out_of_scope",
+ "question": "???",
+ "role": null,
+ "as_of": "2026-11-14",
+ "summary": "Запрос не обработан: в запросе нет слов: сформулируйте вопрос текстом, например «Как оформить командировку?».",
+ "steps": [],
+ "conditions": [],
+ "not_covered": [],
+ "documents": [],
+ "checked_documents": [],
+ "clarifying_question": null,
+ "clarifying_options": [],
+ "clarify_kind": null,
+ "responsible": null,
+ "forms": [],
+ "deadlines": [],
+ "answer_kind": null,
+ "procedure_source": null,
+ "trust": {
+  "checks": [],
+  "supported_steps": 0,
+  "total_steps": 0,
+  "dropped_steps": [],
+  "warnings": [],
+  "verified_by_human": null
+ },
+ "trace": {
+  "provider": "validation",
+  "decision": {
+   "outcome": "invalid",
+   "reason": "в запросе нет слов: сформулируйте вопрос текстом, например «Как оформить командировку?»"
+  }
+ },
+ "timings_ms": {}
+}

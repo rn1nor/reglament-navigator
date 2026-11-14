@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reglament-navigator"
+version = "0.1.0"
+description = "Навигатор сотрудника по внутренним регламентам и приказам: порядок действий с опорой на пункты документов"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+include = ["navigator*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 160
+target-version = "py311"
+exclude = [".venv", "data", "logs", "examples"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "E741", "B008", "B905", "UP007", "UP035", "UP006", "UP045"]

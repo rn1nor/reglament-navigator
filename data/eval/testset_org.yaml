@@ -1,0 +1,46 @@
+# Тест-набор по документам организаторов (data/raw/org). gold_docs — подстроки идентификатора или заголовка документа, либо его номер.
+# Типы: A прямые, B редакции и несколько документов, C перефразированные / длинные / составные, D ловушки на отменённые и отсутствующие
+# приказы, E нет ответа в базе, F неоднозначные.
+items:
+  - {id: A01, type: A, role: staff, question: "Как оформить служебную командировку?", expected_outcome: answer, gold_docs: ["регламент_о_командировании"]}
+  - {id: A02, type: A, role: staff, question: "Какой размер суточных при командировке по России?", expected_outcome: answer, gold_docs: ["регламент_о_командировании", "3699-1"]}
+  - {id: A03, type: A, role: staff, question: "Возмещаются ли расходы на такси в командировке?", expected_outcome: answer, gold_docs: ["регламент_о_командировании"]}
+  - {id: A04, type: A, role: staff, question: "Что делать, если работник заболел во время командировки?", expected_outcome: answer, gold_docs: ["регламент_о_командировании"]}
+  - {id: A05, type: A, role: admin, question: "Как руководителю подать заявку на подбор сотрудника на вакансию?", expected_outcome: answer, gold_docs: ["регламент_поиска_и_подбора"]}
+  - {id: A06, type: A, role: admin, question: "В течение какого срока управление по работе с персоналом размещает объявление о вакансии?", expected_outcome: answer, gold_docs: ["регламент_поиска_и_подбора"]}
+  - {id: A07, type: A, role: staff, question: "Какие условия нужно выполнить сотруднику, чтобы получить место в общежитии?", expected_outcome: answer, gold_docs: ["регламент_поселения"]}
+  - {id: A08, type: A, role: staff, question: "В какой срок сотрудник должен заключить договор найма жилого помещения в общежитии?", expected_outcome: answer, gold_docs: ["регламент_поселения"]}
+  - {id: A09, type: A, role: staff, question: "Как забронировать Концертный зал МФТИ для мероприятия?", expected_outcome: answer, gold_docs: ["регламент_бронирования"]}
+  - {id: A10, type: A, role: staff, question: "Как подать обращение в первую линию технической поддержки и сколько ждать ответа?", expected_outcome: answer, gold_docs: ["первой линии технической поддержки", "техподдер"]}
+  - {id: A11, type: A, role: staff, question: "Принимает ли техподдержка обращения по телефону или в мессенджере?", expected_outcome: answer, gold_docs: ["первой линии технической поддержки", "техподдер"]}
+  - {id: A12, type: A, role: staff, question: "Как разместить серверное оборудование подразделения в центре обработки данных?", expected_outcome: answer, gold_docs: ["центра_обработки_данных", "центра обработки данных"]}
+  - {id: A13, type: A, role: researcher, question: "Как открыть финансовый лицевой счет для научно-исследовательской работы?", expected_outcome: answer, gold_docs: ["3065-1", "приказ_n_3065_1"]}
+  - {id: A14, type: A, role: admin, question: "Как формируется и присваивается номер финансового лицевого счета?", expected_outcome: answer, gold_docs: ["распоряжение_n_700", "присвоения номера"]}
+  - {id: A15, type: A, role: admin, question: "Как согласовать и утвердить смету доходов и расходов подразделения?", expected_outcome: answer, gold_docs: ["приказ_n_794_1", "согласования и утверждения смет"]}
+  - {id: A16, type: A, role: admin, question: "Как подразделению получить внутреннее заимствование на проект?", expected_outcome: answer, gold_docs: ["приказ_5990_1", "внутреннем заимствовании"]}
+  - {id: A17, type: A, role: admin, question: "Какой штраф начисляется за просрочку возврата внутреннего займа?", expected_outcome: answer, gold_docs: ["приказ_5990_1", "внутреннем заимствовании"]}
+  - {id: A18, type: A, role: admin, question: "Как согласовать соглашение в ГИИС «Электронный бюджет»?", expected_outcome: answer, gold_docs: ["приказ_и_регламент_по_эб", "Электронный бюджет"]}
+  - {id: A19, type: A, role: admin, question: "Какой процент страховых взносов учитывать при планировании фонда оплаты труда на 2026 год?", expected_outcome: answer, gold_docs: ["3699-1", "приказ_n_3699_1"]}
+  - {id: A20, type: A, role: admin, question: "Каким приказом утверждена финансовая структура МФТИ на 2026 год?", expected_outcome: answer, gold_docs: ["3614-1", "приказ_n_3614_1"]}
+  - {id: A21, type: A, role: admin, question: "Как рассчитать сумму к распределению по видам затрат по доходному договору?", expected_outcome: answer, gold_docs: ["приказ_n_3699_1"]}
+  - {id: A22, type: A, role: admin, question: "Где готовить и согласовывать сметы: в какой информационной системе?", expected_outcome: answer, gold_docs: ["889-1", "приказ_n_794_1", "приказ_n_889_1"]}
+  - {id: B01, type: B, role: researcher, question: "Какая редакция регламента открытия финансового лицевого счета сейчас действует?", expected_outcome: answer, gold_docs: ["приказ_n_3065_1"]}
+  - {id: B02, type: B, role: staff, question: "Сколько составляют суточные при командировке по России по регламенту и по приказу о бюджете на 2026 год?", expected_outcome: answer, gold_docs: ["регламент_о_командировании", "приказ_n_3699_1"]}
+  - {id: B03, type: B, role: admin, question: "Какой приказ сейчас регулирует внутреннее заимствование для проектов?", expected_outcome: answer, gold_docs: ["приказ_5990_1"]}
+  - {id: C01, type: C, role: admin, question: "Я руководитель лаборатории, нам нужен новый инженер в штат. С чего начать, кто должен согласовать служебную записку и сколько ждать публикации вакансии?", expected_outcome: answer, gold_docs: ["регламент_поиска_и_подбора"]}
+  - {id: C02, type: C, role: admin, question: "Сколько длится внутренний заём и какой штраф, если не вернуть его вовремя?", expected_outcome: answer, gold_docs: ["приказ_5990_1"]}
+  - {id: C03, type: C, role: staff, question: "Можно ли вызвать такси из аэропорта ночью за счёт института, если я в командировке?", expected_outcome: answer, gold_docs: ["регламент_о_командировании"]}
+  - {id: C04, type: C, role: staff, question: "У меня не работает корпоративная почта, куда писать и когда ответят?", expected_outcome: answer, gold_docs: ["первой линии технической поддержки", "техподдер"]}
+  - {id: C05, type: C, role: staff, question: "Мне 45 лет, я сотрудник МФТИ, прописан в Твери. Могу ли я заселиться в общежитие?", expected_outcome: answer, gold_docs: ["регламент_поселения"]}
+  - {id: D01, type: D, question: "Что говорит приказ от 08.07.2020 № 1465-1 о внутреннем заимствовании?", expected_outcome: cancelled_notice, gold_docs: ["приказ_5990_1"]}
+  - {id: D02, type: D, question: "Что говорит приказ № 9999-1 от 01.01.2024 о премировании сотрудников?", expected_outcome: refuse, gold_docs: []}
+  - {id: D03, type: D, question: "Что установлено приказом от 19.09.2019 № 1469-1 о бланках смет?", expected_outcome: cancelled_notice, gold_docs: ["приказ_n_794_1"]}
+  - {id: E01, type: E, role: staff, question: "Как оформить ежегодный оплачиваемый отпуск?", expected_outcome: refuse, gold_docs: []}
+  - {id: E02, type: E, role: staff, question: "Какой порядок выплаты квартальной премии сотрудникам?", expected_outcome: refuse, gold_docs: []}
+  - {id: E03, type: E, role: staff, question: "Как оформить материальную помощь сотруднику?", expected_outcome: refuse, gold_docs: []}
+  - {id: E04, type: E, role: admin, question: "Какой порядок проведения закупок по 223-ФЗ?", expected_outcome: refuse, gold_docs: []}
+  - {id: E05, type: E, role: staff, question: "Как записаться на курсы повышения квалификации?", expected_outcome: refuse, gold_docs: []}
+  - {id: E06, type: E, role: student, question: "Как получить повышенную стипендию?", expected_outcome: refuse, gold_docs: []}
+  - {id: E07, type: E, question: "Какая погода будет в Долгопрудном на выходных?", expected_outcome: out_of_scope, gold_docs: []}
+  - {id: E08, type: E, role: staff, question: "Как оформить увольнение по собственному желанию?", expected_outcome: refuse, gold_docs: []}
+  - {id: F01, type: F, question: "Какой срок подачи заявки?", expected_outcome: clarify, gold_docs: []}

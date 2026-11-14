@@ -1,0 +1,598 @@
+{
+ "outcome": "answer",
+ "question": "Как перейти с платного обучения на бюджет?",
+ "role": "student",
+ "as_of": "2026-11-14",
+ "summary": "Применимый документ: «ПОРЯДОК перехода обучающихся МФТИ с платного обучения на бесплатное (утв. приказом № 3348-1 от 30.08.2024)». Ключевое положение: Обучающийся, желающий перейти на вакантное бюджетное место, представляет в физтех-школу заявление на имя ректора о переходе с платного обучения на бесплатное в Ниже — пункты документа, относящиеся к вопросу (дословные выдержки; без модели пошаговая инструкция не формируется).",
+ "steps": [
+  {
+   "text": "п. 1.3: Настоящий Порядок регламентирует переход обучающихся МФТИ, осваивающих программы высшего образования, с платного обучения (по договорам об образовании) на бесплатное (обучение за счет средств бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации и местных бюджетов (далее – бюджетные ассигнования) либо за счет собственных средств МФТИ, в том числе средств, полученных от приносящей доход",
+   "citations": [
+    {
+     "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+     "clause_id": "1.3",
+     "quote": "Настоящий Порядок регламентирует переход обучающихся МФТИ, осваивающих программы высшего образования, с платного обучения (по договорам об образовании) на беспл"
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+  },
+  {
+   "text": "п. 2.1: Переход с платного обучения на бесплатное осуществляется при наличии в МФТИ свободных мест, финансируемых за счет бюджетных ассигнований по соответствующей образовательной программе по специальности, направлению подготовки, научной специальности и форме обучения на соответствующем курсе (далее – вакантные бюджетные места) либо за счет собственных средств МФТИ. Документ подписан простой электронной подписью Информация",
+   "citations": [
+    {
+     "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+     "clause_id": "2.1",
+     "quote": "Переход с платного обучения на бесплатное осуществляется при наличии в МФТИ свободных мест, финансируемых за счет бюджетных ассигнований по соответствующей обра"
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+  },
+  {
+   "text": "пп. «г» п. 2.3: Участники специальной военной операции, не имеющие на момент подачи заявления на переход академической задолженности, дисциплинарных взысканий, задолженности по оплате обучения, переводятся на вакантные бюджетные места, перераспределенные в соответствии с Правилами перераспределения вакантных мест, имеющихся в образовательной организации и финансируемых за счет бюджетных ассигнований федерального бюджета, бюджетов су",
+   "citations": [
+    {
+     "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+     "clause_id": "2.3.г",
+     "quote": "Участники специальной военной операции, не имеющие на момент подачи заявления на переход академической задолженности, дисциплинарных взысканий, задолженности по"
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 0.94 (эвристика)"
+  },
+  {
+   "text": "п. 2.5: Обучающийся, желающий перейти на вакантное бюджетное место, представляет в физтех-школу заявление на имя ректора о переходе с платного обучения на бесплатное в соответствии с Приложением 1. К заявлению обучающегося прилагаются следующие документы",
+   "citations": [
+    {
+     "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+     "clause_id": "2.5",
+     "quote": "Обучающийся, желающий перейти на вакантное бюджетное место, представляет в физтех-школу заявление на имя ректора о переходе с платного обучения на бесплатное в"
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+  },
+  {
+   "text": "п. 2.9, абз. 1: о переходе обучающегося с платного обучения на обучение на вакантное бюджетное место",
+   "citations": [
+    {
+     "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+     "clause_id": "2.9.-1",
+     "quote": "о переходе обучающегося с платного обучения на обучение на вакантное бюджетное место;"
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 0.88 (эвристика)"
+  },
+  {
+   "text": "п. 2.10: Комиссия устанавливает приоритетность перехода обучающихся с платного обучения на бесплатное в соответствии с условиями, установленными п. При переходе с платного обучения на вакантное бюджетное место, образовавшееся в результате отчисления лица, обучавшегося по договору о целевом обучении, приоритет отдается обучающимся, заключившим договор о целевом обучении по соответствующей специальности высшего образования, нап",
+   "citations": [
+    {
+     "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+     "clause_id": "2.10",
+     "quote": "При переходе с платного обучения на вакантное бюджетное место, образовавшееся в результате отчисления лица, обучавшегося по договору о целевом обучении, приорит"
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 0.93 (эвристика)"
+  }
+ ],
+ "conditions": [],
+ "not_covered": [],
+ "documents": [
+  {
+   "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+   "title": "ПОРЯДОК перехода обучающихся МФТИ с платного обучения на бесплатное",
+   "doc_type": "порядок",
+   "number": null,
+   "date": "2024-08-30",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/viu/Poryadok_perexoda_obuchayuschixsya_MFTI_s_platnogo_obucheniya_na_besplatnoe.pdf",
+   "source_path": "data/raw/mipt/Poryadok_perexoda_obuchayuschixsya_MFTI_s_platnogo_obucheniya_na_besplatnoe_8323dcff.pdf",
+   "topics": [
+    "Финансы, бухгалтерия и отчётность",
+    "Дисциплина и споры",
+    "Учебный процесс и аттестация"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  }
+ ],
+ "checked_documents": [
+  {
+   "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+   "title": "ПОРЯДОК перехода обучающихся МФТИ с платного обучения на бесплатное",
+   "doc_type": "порядок",
+   "number": null,
+   "date": "2024-08-30",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/viu/Poryadok_perexoda_obuchayuschixsya_MFTI_s_platnogo_obucheniya_na_besplatnoe.pdf",
+   "source_path": "data/raw/mipt/Poryadok_perexoda_obuchayuschixsya_MFTI_s_platnogo_obucheniya_na_besplatnoe_8323dcff.pdf",
+   "topics": [
+    "Финансы, бухгалтерия и отчётность",
+    "Дисциплина и споры",
+    "Учебный процесс и аттестация"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  }
+ ],
+ "clarifying_question": null,
+ "clarifying_options": [],
+ "responsible": null,
+ "forms": [
+  "Приложением 1"
+ ],
+ "deadlines": [],
+ "trust": {
+  "checks": [
+   {
+    "name": "Цитаты указывают на переданные пункты",
+    "passed": true,
+    "detail": "6 из 6"
+   },
+   {
+    "name": "Текст цитат совпадает с документом",
+    "passed": true,
+    "detail": "все совпали"
+   },
+   {
+    "name": "Документы действуют на дату запроса",
+    "passed": true,
+    "detail": "2026-11-14"
+   },
+   {
+    "name": "Редакция пунктов актуальна",
+    "passed": true,
+    "detail": "поправок к процитированным пунктам нет"
+   },
+   {
+    "name": "Качество распознавания текста",
+    "passed": true,
+    "detail": "текстовый слой"
+   },
+   {
+    "name": "Шаги подтверждены документами",
+    "passed": true,
+    "detail": "подтверждено 6, частично 0, отброшено 0"
+   },
+   {
+    "name": "Уверенность поиска",
+    "passed": true,
+    "detail": "rerank=0.90"
+   },
+   {
+    "name": "Противоречий с другими действующими пунктами не найдено",
+    "passed": true,
+    "detail": "по списку кандидатов паспорта базы"
+   }
+  ],
+  "supported_steps": 6,
+  "total_steps": 6,
+  "dropped_steps": [],
+  "warnings": [],
+  "verified_by_human": null
+ },
+ "trace": {
+  "provider": "mock",
+  "embedder": "BAAI/bge-m3",
+  "confidential": false,
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "query": {
+   "intent": "Как перейти с платного обучения на бюджет?",
+   "role": "student",
+   "role_confidence": 1.0,
+   "mentioned_documents": [],
+   "as_of": null,
+   "situation_dates": [],
+   "reformulations": [
+    "переход с платного обучения на бесплатное",
+    "вакантные бюджетные места",
+    "платные образовательные услуги",
+    "стоимость обучения"
+   ],
+   "keywords": [
+    "перейти",
+    "платного",
+    "обучения",
+    "бюджет"
+   ],
+   "out_of_scope": false,
+   "out_of_scope_reason": null
+  },
+  "queries": [
+   "Как перейти с платного обучения на бюджет?",
+   "переход с платного обучения на бесплатное",
+   "вакантные бюджетные места",
+   "платные образовательные услуги",
+   "стоимость обучения"
+  ],
+  "method": "rerank",
+  "decision": {
+   "outcome": "answer",
+   "reason": "все шаги подтверждены",
+   "gate_ok": true,
+   "gate_value": 0.9018982648849487,
+   "gate_kind": "rerank"
+  },
+  "hits": [
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.5",
+    "rrf": 0.0946,
+    "bm25": 18.2,
+    "dense": 0.696,
+    "rerank": 0.902
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.10",
+    "rrf": 0.0718,
+    "bm25": 15.37,
+    "dense": 0.688,
+    "rerank": 0.867
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3.г",
+    "rrf": 0.092,
+    "bm25": 15.94,
+    "dense": 0.694,
+    "rerank": 0.859
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "1.3",
+    "rrf": 0.0735,
+    "bm25": 16.73,
+    "dense": 0.686,
+    "rerank": 0.837
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.1",
+    "rrf": 0.0646,
+    "bm25": 14.67,
+    "dense": 0.725,
+    "rerank": 0.788
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "1.1.-2",
+    "rrf": 0.0598,
+    "bm25": 12.9,
+    "dense": 0.675,
+    "rerank": 0.75
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.9.-1",
+    "rrf": 0.0911,
+    "bm25": 17.94,
+    "dense": 0.69,
+    "rerank": 0.725
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.5.б",
+    "rrf": 0.0929,
+    "bm25": 15.5,
+    "dense": 0.66,
+    "rerank": 0.708
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.5.а",
+    "rrf": 0.0924,
+    "bm25": 15.04,
+    "dense": 0.666,
+    "rerank": 0.688
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.11",
+    "rrf": 0.0793,
+    "bm25": 18.99,
+    "dense": 0.697,
+    "rerank": 0.688
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.15",
+    "rrf": 0.0593,
+    "bm25": 19.2,
+    "dense": 0.69,
+    "rerank": 0.663
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.2",
+    "rrf": 0.072,
+    "bm25": 15.88,
+    "dense": 0.627,
+    "rerank": 0.658
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3.а",
+    "rrf": 0.0608,
+    "bm25": 18.8,
+    "dense": 0.692,
+    "rerank": 0.543
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3",
+    "rrf": 0.0591,
+    "bm25": 18.28,
+    "dense": 0.698,
+    "rerank": 0.475
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.12",
+    "rrf": 0.0787,
+    "bm25": 18.33,
+    "dense": 0.685,
+    "rerank": 0.375
+   }
+  ],
+  "context_units": [
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "1.1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "1.1.-1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "1.1.-2",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "1.1.-3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "1.2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "1.3",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "1.4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.1",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3",
+    "reason": "reference"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3.а",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3.б",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3.-3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3.-4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3.-5",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3.-6",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3.в",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.3.г",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.5",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.5.а",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.5.б",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.6",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.9",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.9.-1",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.9.-2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.9.-3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.10",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "2.11",
+    "reason": "section"
+   },
+   {
+    "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+    "clause_id": "p2@Прил.1",
+    "reason": "attachment"
+   }
+  ],
+  "deadline_rules": [],
+  "draft": {
+   "answerable": "yes",
+   "summary": "Применимый документ: «ПОРЯДОК перехода обучающихся МФТИ с платного обучения на бесплатное (утв. приказом № 3348-1 от 30.08.2024)». Ключевое положение: Обучающийся, желающий перейти на вакантное бюджетное место, представляет в физтех-школу заявление на имя ректора о переходе с платного обучения на бесплатное в Ниже — пункты документа, относящиеся к вопросу (дословные выдержки; без модели пошаговая инструкция не формируется).",
+   "applicable_documents": [
+    "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5"
+   ],
+   "steps": [
+    {
+     "text": "п. 1.3: Настоящий Порядок регламентирует переход обучающихся МФТИ, осваивающих программы высшего образования, с платного обучения (по договорам об образовании) на бесплатное (обучение за счет средств бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации и местных бюджетов (далее – бюджетные ассигнования) либо за счет собственных средств МФТИ, в том числе средств, полученных от приносящей доход",
+     "citations": [
+      {
+       "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+       "clause_id": "1.3",
+       "quote": "Настоящий Порядок регламентирует переход обучающихся МФТИ, осваивающих программы высшего образования, с платного обучения (по договорам об образовании) на беспл"
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+    },
+    {
+     "text": "п. 2.1: Переход с платного обучения на бесплатное осуществляется при наличии в МФТИ свободных мест, финансируемых за счет бюджетных ассигнований по соответствующей образовательной программе по специальности, направлению подготовки, научной специальности и форме обучения на соответствующем курсе (далее – вакантные бюджетные места) либо за счет собственных средств МФТИ. Документ подписан простой электронной подписью Информация",
+     "citations": [
+      {
+       "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+       "clause_id": "2.1",
+       "quote": "Переход с платного обучения на бесплатное осуществляется при наличии в МФТИ свободных мест, финансируемых за счет бюджетных ассигнований по соответствующей обра"
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+    },
+    {
+     "text": "пп. «г» п. 2.3: Участники специальной военной операции, не имеющие на момент подачи заявления на переход академической задолженности, дисциплинарных взысканий, задолженности по оплате обучения, переводятся на вакантные бюджетные места, перераспределенные в соответствии с Правилами перераспределения вакантных мест, имеющихся в образовательной организации и финансируемых за счет бюджетных ассигнований федерального бюджета, бюджетов су",
+     "citations": [
+      {
+       "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+       "clause_id": "2.3.г",
+       "quote": "Участники специальной военной операции, не имеющие на момент подачи заявления на переход академической задолженности, дисциплинарных взысканий, задолженности по"
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 0.94 (эвристика)"
+    },
+    {
+     "text": "п. 2.5: Обучающийся, желающий перейти на вакантное бюджетное место, представляет в физтех-школу заявление на имя ректора о переходе с платного обучения на бесплатное в соответствии с Приложением 1. К заявлению обучающегося прилагаются следующие документы",
+     "citations": [
+      {
+       "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+       "clause_id": "2.5",
+       "quote": "Обучающийся, желающий перейти на вакантное бюджетное место, представляет в физтех-школу заявление на имя ректора о переходе с платного обучения на бесплатное в"
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+    },
+    {
+     "text": "п. 2.9, абз. 1: о переходе обучающегося с платного обучения на обучение на вакантное бюджетное место",
+     "citations": [
+      {
+       "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+       "clause_id": "2.9.-1",
+       "quote": "о переходе обучающегося с платного обучения на обучение на вакантное бюджетное место;"
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 0.88 (эвристика)"
+    },
+    {
+     "text": "п. 2.10: Комиссия устанавливает приоритетность перехода обучающихся с платного обучения на бесплатное в соответствии с условиями, установленными п. При переходе с платного обучения на вакантное бюджетное место, образовавшееся в результате отчисления лица, обучавшегося по договору о целевом обучении, приоритет отдается обучающимся, заключившим договор о целевом обучении по соответствующей специальности высшего образования, нап",
+     "citations": [
+      {
+       "doc_id": "poryadok_perexoda_obuchayuschixsya_mfti_s_platno-7634a5",
+       "clause_id": "2.10",
+       "quote": "При переходе с платного обучения на вакантное бюджетное место, образовавшееся в результате отчисления лица, обучавшегося по договору о целевом обучении, приорит"
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 0.93 (эвристика)"
+    }
+   ],
+   "conditions": [],
+   "not_covered": [],
+   "role_branches": [],
+   "clarifying_question": null,
+   "clarifying_options": [],
+   "responsible": null,
+   "forms": [
+    "Приложением 1"
+   ],
+   "deadlines": []
+  }
+ },
+ "timings_ms": {
+  "understand": 0,
+  "retrieve": 3853,
+  "generate": 13,
+  "verify": 1
+ }
+}

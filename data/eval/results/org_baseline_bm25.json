@@ -1,0 +1,79 @@
+{
+ "n": 42,
+ "outcome_accuracy": 0.738,
+ "doc_recall@5": 1.0,
+ "retrieval_recall@1": 0.969,
+ "retrieval_recall@3": 0.969,
+ "retrieval_recall@5": 1.0,
+ "retrieval_recall@10": 1.0,
+ "retrieval_mrr@10": 0.977,
+ "retrieval_ndcg@10": 0.876,
+ "cited_doc_precision": 1.0,
+ "step_groundedness": 1.0,
+ "citation_validity": 1.0,
+ "false_answer_rate_E": 0.25,
+ "over_refusal_A": 0.136,
+ "cancelled_leak_D": 0.0,
+ "cancelled_notice_D": 0.667,
+ "clarify_rate_F": 0.0,
+ "outcome_accuracy_C": 0.2,
+ "latency_p50_ms": 1,
+ "latency_p95_ms": 2,
+ "by_type": {
+  "A": {
+   "n": 22,
+   "outcome_accuracy": 0.864,
+   "doc_recall@5": 1.0
+  },
+  "B": {
+   "n": 3,
+   "outcome_accuracy": 0.667,
+   "doc_recall@5": 1.0
+  },
+  "C": {
+   "n": 5,
+   "outcome_accuracy": 0.2,
+   "doc_recall@5": 1.0
+  },
+  "D": {
+   "n": 3,
+   "outcome_accuracy": 1.0,
+   "doc_recall@5": 1.0
+  },
+  "E": {
+   "n": 8,
+   "outcome_accuracy": 0.75,
+   "doc_recall@5": null
+  },
+  "F": {
+   "n": 1,
+   "outcome_accuracy": 0.0,
+   "doc_recall@5": null
+  }
+ },
+ "confusion": {
+  "answer": {
+   "answer": 21,
+   "refuse": 8,
+   "partial": 1
+  },
+  "cancelled_notice": {
+   "cancelled_notice": 2
+  },
+  "refuse": {
+   "refuse": 6,
+   "answer": 2
+  },
+  "out_of_scope": {
+   "out_of_scope": 1
+  },
+  "clarify": {
+   "answer": 1
+  }
+ },
+ "label": "org_baseline_bm25",
+ "provider": "mock",
+ "embedder": "bm25-only",
+ "reranker": null,
+ "run_at": "2026-11-14T22:31:26"
+}

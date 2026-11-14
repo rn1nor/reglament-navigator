@@ -1,0 +1,514 @@
+{
+ "outcome": "refuse",
+ "question": "Как оформить служебную командировку и получить суточные?",
+ "role": "staff",
+ "as_of": "2026-11-14",
+ "summary": "В базе не найден регламент или приказ, подтверждающий ответ на этот вопрос. Проверены ближайшие по теме документы: ПОЛОЖЕНИЕ о порядке организации и проведении практики обучающихся (утв. приказом (действует); Приказ «Об утверждении Правил внутреннего трудового распорядка МФТИ» (действует); ПОЛОЖЕНИЕ о предоставлении академического и других видов отпусков обучающимся МФ (действует (с изменениями)). Найденные пункты слабо связаны с вопросом: подтверждающего регламента в базе нет.",
+ "steps": [],
+ "conditions": [],
+ "not_covered": [],
+ "documents": [],
+ "checked_documents": [
+  {
+   "doc_id": "pologhenie_o_praktike_46db1c7e-7d138d-att1",
+   "title": "ПОЛОЖЕНИЕ о порядке организации и проведении практики обучающихся",
+   "doc_type": "положение",
+   "number": null,
+   "date": "2018-10-03",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/eiv/Pologhenie_o_praktike.pdf",
+   "source_path": "data/raw/mipt/Pologhenie_o_praktike_46db1c7e.pdf",
+   "topics": [
+    "Учебный процесс и аттестация",
+    "Наука, аспирантура и гранты",
+    "Имущество и охрана труда"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  },
+  {
+   "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+   "title": "Об утверждении Правил внутреннего трудового распорядка МФТИ",
+   "doc_type": "приказ",
+   "number": null,
+   "date": null,
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/ziu/Pravila_vnutrennego_rasporyadka_2020.pdf",
+   "source_path": "data/raw/mipt/Pravila_vnutrennego_rasporyadka_2020_b658fb23.pdf",
+   "topics": [
+    "Кадры и трудовые отношения",
+    "Дисциплина и споры",
+    "Имущество и охрана труда"
+   ],
+   "owner_unit": "первого проректора",
+   "date_partial": false
+  },
+  {
+   "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+   "title": "ПОЛОЖЕНИЕ о предоставлении академического и других видов отпусков обучающимся МФТИ",
+   "doc_type": "положение",
+   "number": null,
+   "date": "2025-09-01",
+   "status": "active",
+   "status_reason": "действует с изменениями: Приказ № 5999-1 от 10.11.2026 «О внесении изменений в Положение о предоставлении академического и других видов отпусков о»",
+   "amended_by": [
+    "prikaz_demo_5999_1_izmeneniya-cde575"
+   ],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/eib/Prikaz_N_3909-1_ot_01.09.2025_(AO).pdf",
+   "source_path": "data/raw/mipt/Prikaz_N_3909-1_ot_01.09.2025__AO_9c6a0016.pdf",
+   "topics": [
+    "Движение контингента",
+    "Учебный процесс и аттестация",
+    "Наука, аспирантура и гранты"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  },
+  {
+   "doc_id": "nov__red__pologheniya_o_tekuschem_kontrole_okt__-87bbab",
+   "title": "ПОЛОЖЕНИЕ о текущем контроле успеваемости и промежуточной аттестации обучающихся МФТИ",
+   "doc_type": "положение",
+   "number": null,
+   "date": "2024-04-26",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/ail/Nov._red._pologheniya_o_tekuschem_kontrole_okt._2026.pdf",
+   "source_path": "data/raw/mipt/Nov._red._pologheniya_o_tekuschem_kontrole_okt._2026_a53725bf.pdf",
+   "topics": [
+    "Учебный процесс и аттестация",
+    "Наука, аспирантура и гранты",
+    "Дисциплина и споры"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  }
+ ],
+ "clarifying_question": null,
+ "clarifying_options": [],
+ "responsible": null,
+ "forms": [],
+ "deadlines": [],
+ "trust": {
+  "checks": [
+   {
+    "name": "Цитаты указывают на переданные пункты",
+    "passed": true,
+    "detail": "цитат нет"
+   },
+   {
+    "name": "Текст цитат совпадает с документом",
+    "passed": true,
+    "detail": "все совпали"
+   },
+   {
+    "name": "Документы действуют на дату запроса",
+    "passed": true,
+    "detail": "2026-11-14"
+   },
+   {
+    "name": "Редакция пунктов актуальна",
+    "passed": true,
+    "detail": "поправок к процитированным пунктам нет"
+   },
+   {
+    "name": "Качество распознавания текста",
+    "passed": true,
+    "detail": "текстовый слой"
+   },
+   {
+    "name": "Шаги подтверждены документами",
+    "passed": true,
+    "detail": "подтверждено 0, частично 0, отброшено 0"
+   },
+   {
+    "name": "Уверенность поиска",
+    "passed": false,
+    "detail": "rerank=0.13"
+   },
+   {
+    "name": "Противоречий с другими действующими пунктами не найдено",
+    "passed": true,
+    "detail": "по списку кандидатов паспорта базы"
+   }
+  ],
+  "supported_steps": 0,
+  "total_steps": 0,
+  "dropped_steps": [],
+  "warnings": [],
+  "verified_by_human": null
+ },
+ "trace": {
+  "provider": "mock",
+  "embedder": "BAAI/bge-m3",
+  "confidential": false,
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "query": {
+   "intent": "Как оформить служебную командировку и получить суточные?",
+   "role": "staff",
+   "role_confidence": 1.0,
+   "mentioned_documents": [],
+   "as_of": null,
+   "situation_dates": [],
+   "reformulations": [
+    "возмещение дополнительных расходов, связанных с проживанием вне места жительства",
+    "суточные при командировании"
+   ],
+   "keywords": [
+    "оформить",
+    "служебную",
+    "командировку",
+    "получить",
+    "суточные"
+   ],
+   "out_of_scope": false,
+   "out_of_scope_reason": null
+  },
+  "queries": [
+   "Как оформить служебную командировку и получить суточные?",
+   "возмещение дополнительных расходов, связанных с проживанием вне места жительства",
+   "суточные при командировании"
+  ],
+  "method": "rerank",
+  "decision": {
+   "outcome": "refuse",
+   "reason": "в базе нет пункта, подтверждающего ответ",
+   "gate_ok": false,
+   "gate_value": 0.12678825855255127,
+   "gate_kind": "rerank"
+  },
+  "hits": [
+   {
+    "doc_id": "pologhenie_o_praktike_46db1c7e-7d138d-att1",
+    "clause_id": "4.1.2",
+    "rrf": 0.0965,
+    "bm25": 28.39,
+    "dense": 0.592,
+    "rerank": 0.127
+   },
+   {
+    "doc_id": "pologhenie_o_praktike_46db1c7e-7d138d-att1",
+    "clause_id": "4.1.3",
+    "rrf": 0.0929,
+    "bm25": 33.03,
+    "dense": 0.629,
+    "rerank": 0.056
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.3.-2",
+    "rrf": 0.0241,
+    "bm25": 0.0,
+    "dense": 0.529,
+    "rerank": 0.001
+   },
+   {
+    "doc_id": "nov__red__pologheniya_o_tekuschem_kontrole_okt__-87bbab",
+    "clause_id": "1.5.-5",
+    "rrf": 0.0477,
+    "bm25": 9.96,
+    "dense": 0.515,
+    "rerank": 0.001
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "10.5",
+    "rrf": 0.0467,
+    "bm25": 0.0,
+    "dense": 0.523,
+    "rerank": 0.001
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.4",
+    "rrf": 0.0331,
+    "bm25": 0.0,
+    "dense": 0.487,
+    "rerank": 0.001
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.7.-2",
+    "rrf": 0.024,
+    "bm25": 0.0,
+    "dense": 0.481,
+    "rerank": 0.001
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.3.-4",
+    "rrf": 0.0264,
+    "bm25": 0.0,
+    "dense": 0.49,
+    "rerank": 0.001
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "5.1.-3",
+    "rrf": 0.028,
+    "bm25": 0.0,
+    "dense": 0.499,
+    "rerank": 0.001
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.1.-5",
+    "rrf": 0.02,
+    "bm25": 0.0,
+    "dense": 0.459,
+    "rerank": 0.001
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.3.-1",
+    "rrf": 0.0215,
+    "bm25": 0.0,
+    "dense": 0.46,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.5",
+    "rrf": 0.0322,
+    "bm25": 0.0,
+    "dense": 0.486,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.7.-3",
+    "rrf": 0.0401,
+    "bm25": 0.0,
+    "dense": 0.513,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "pologhenie_o_praktike_46db1c7e-7d138d-att1",
+    "clause_id": "4.1.4",
+    "rrf": 0.0266,
+    "bm25": 0.0,
+    "dense": 0.523,
+    "rerank": 0.0
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.7",
+    "rrf": 0.0278,
+    "bm25": 0.0,
+    "dense": 0.477,
+    "rerank": 0.0
+   }
+  ],
+  "context_units": [
+   {
+    "doc_id": "pologhenie_o_praktike_46db1c7e-7d138d-att1",
+    "clause_id": "4.1.1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pologhenie_o_praktike_46db1c7e-7d138d-att1",
+    "clause_id": "4.1.2",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "pologhenie_o_praktike_46db1c7e-7d138d-att1",
+    "clause_id": "4.1.3",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "pologhenie_o_praktike_46db1c7e-7d138d-att1",
+    "clause_id": "4.1.4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.3.-1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.3.-2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.3.-3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.3.-4",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.4",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.5",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.6",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.7",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.7.-1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.7.-2",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.7.-3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.8",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "6.9",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "10.1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "10.2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "10.3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "10.4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "10.5",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "10.6",
+    "reason": "section"
+   },
+   {
+    "doc_id": "pravila_vnutrennego_rasporyadka_2020_b658fb23-a89c29",
+    "clause_id": "10.7",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.3.-1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.3.-2",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.3.-3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3909_1_ot_01_09_2025__ao_9c6a0016-812052-att1",
+    "clause_id": "2.3.-4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "nov__red__pologheniya_o_tekuschem_kontrole_okt__-87bbab",
+    "clause_id": "1.5.-1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "nov__red__pologheniya_o_tekuschem_kontrole_okt__-87bbab",
+    "clause_id": "1.5.-2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "nov__red__pologheniya_o_tekuschem_kontrole_okt__-87bbab",
+    "clause_id": "1.5.-3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "nov__red__pologheniya_o_tekuschem_kontrole_okt__-87bbab",
+    "clause_id": "1.5.-4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "nov__red__pologheniya_o_tekuschem_kontrole_okt__-87bbab",
+    "clause_id": "1.5.-5",
+    "reason": "hit"
+   }
+  ],
+  "deadline_rules": [],
+  "draft": {
+   "answerable": "no",
+   "summary": "Найденные пункты слабо связаны с вопросом: подтверждающего регламента в базе нет.",
+   "applicable_documents": [],
+   "steps": [],
+   "conditions": [],
+   "not_covered": [],
+   "role_branches": [],
+   "clarifying_question": null,
+   "clarifying_options": [],
+   "responsible": null,
+   "forms": [],
+   "deadlines": []
+  }
+ },
+ "timings_ms": {
+  "understand": 0,
+  "retrieve": 6514,
+  "generate": 0,
+  "verify": 0
+ }
+}

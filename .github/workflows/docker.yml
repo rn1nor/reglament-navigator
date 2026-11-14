@@ -1,0 +1,205 @@
+name: docker
+
+# Проверка развёртывания: образ собирается теми же командами, что в README, сервисы поднимаются и отвечают.
+# На каждый push и pull request идёт быстрая проверка без моделей (режим BM25).
+# Полная проверка (модели внутри образа, ответ без доступа в интернет) запускается вручную:
+#   gh workflow run docker.yml -f full=true
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Полная проверка: образ с моделями поиска и ответ без сети (20–40 минут)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: docker-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    name: сборка образа и запуск (BM25)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PRELOAD_MODELS: "0"
+      NAVIGATOR_USE_DENSE: "off"
+      NAVIGATOR_USE_RERANKER: "off"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Версии Docker и проверка compose-файла
+        run: |
+          docker version --format 'docker {{.Server.Version}}'
+          docker compose version
+          docker compose --profile api config --quiet
+
+      - name: Сборка образа
+        run: docker compose build ui
+
+      - name: Образ - размер и состав
+        run: |
+          docker image ls reglament-navigator
+          docker run --rm --entrypoint sh reglament-navigator:local -c '
+            set -e
+            python --version
+            tesseract --list-langs | grep -qx rus
+            command -v antiword
+            command -v catdoc
+            python -c "import striprtf, pytesseract, torch, sentence_transformers, streamlit, fastapi; print(\"torch\", torch.__version__, \"streamlit\", streamlit.__version__)"
+            test -f data/kb/org/kb.json
+            ls data/raw/org | wc -l
+          '
+
+      - name: Образ без compose и без сети отвечает на вопрос
+        run: |
+          docker run --rm --network none -e NAVIGATOR_USE_DENSE=off -e NAVIGATOR_USE_RERANKER=off reglament-navigator:local \
+            python scripts/ask.py "Как оформить служебную командировку?" --kb data/kb/org --role staff --json > ask_offline.json
+          python3 - <<'PY'
+          import json
+          text = open("ask_offline.json", encoding="utf-8").read()
+          resp = json.loads(text[text.index("{"):])
+          print("исход:", resp["outcome"], "| шагов:", len(resp["steps"]), "| документов:", len(resp["documents"]))
+          assert resp["outcome"] in ("answer", "partial"), resp["outcome"]
+          assert resp["steps"], "в ответе нет шагов"
+          PY
+
+      - name: Запуск интерфейса и API
+        run: docker compose --profile api up -d
+
+      - name: Ожидание готовности
+        run: |
+          for i in $(seq 1 90); do
+            if curl -fsS -m 5 -o /dev/null http://localhost:8501/_stcore/health \
+               && curl -fsS -m 5 -o /dev/null http://localhost:8000/openapi.json; then
+              echo "интерфейс и API отвечают (попытка $i)"
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "сервисы не поднялись за 3 минуты"
+          exit 1
+
+      - name: Проверка API и интерфейса
+        run: |
+          python3 - <<'PY'
+          import json, time, urllib.error, urllib.request
+
+          API = "http://localhost:8000"
+          UI = "http://localhost:8501"
+
+          def call(path, payload=None, timeout=300):
+              data = json.dumps(payload).encode() if payload is not None else None
+              req = urllib.request.Request(API + path, data=data, headers={"Content-Type": "application/json"})
+              try:
+                  with urllib.request.urlopen(req, timeout=timeout) as r:
+                      return r.status, json.loads(r.read().decode())
+              except urllib.error.HTTPError as e:
+                  return e.code, e.read().decode()[:500]
+
+          code, health = call("/health")
+          print("GET /health:", code, health)
+          assert code == 200 and health.get("status") == "ok", "API /health"
+          assert health.get("documents", 1) > 0 and health.get("units", 1) > 0, "база пуста"
+
+          started = time.time()
+          code, resp = call("/ask", {"question": "Как оформить служебную командировку?", "role": "staff"})
+          assert code == 200, f"POST /ask: {code} {resp}"
+          print(f"POST /ask: {time.time() - started:.1f} с | исход: {resp['outcome']} | шагов: {len(resp['steps'])} | документов: {len(resp['documents'])}")
+          print("краткий ответ:", resp["summary"][:300])
+          assert resp["outcome"] in ("answer", "partial"), resp["outcome"]
+          assert resp["steps"], "в ответе нет шагов"
+          for step in resp["steps"]:
+              assert step["citations"], "шаг без ссылки на пункт документа"
+              assert all(c["doc_id"] and c["clause_id"] for c in step["citations"]), "ссылка без документа или пункта"
+
+          code, resp = call("/ask", {"question": ""})
+          print("POST /ask с пустым вопросом:", code)
+          assert code == 422 or (code == 200 and resp.get("outcome") not in ("answer", "partial")), "пустой вопрос принят как обычный"
+
+          with urllib.request.urlopen(UI + "/_stcore/health", timeout=30) as r:
+              body = r.read().decode().strip()
+              print("GET /_stcore/health:", r.status, body)
+              assert r.status == 200 and body == "ok"
+          with urllib.request.urlopen(UI + "/", timeout=30) as r:
+              page = r.read().decode()
+              print("GET /:", r.status, len(page), "байт")
+              assert r.status == 200 and "<html" in page.lower()
+          PY
+
+      - name: Состояние контейнеров (healthcheck каждого сервиса)
+        run: |
+          for i in $(seq 1 30); do
+            ui=$(docker inspect --format '{{.State.Health.Status}}' "$(docker compose ps -q ui)")
+            api=$(docker inspect --format '{{.State.Health.Status}}' "$(docker compose --profile api ps -q api)")
+            echo "ui: $ui, api: $api"
+            if [ "$ui" = healthy ] && [ "$api" = healthy ]; then break; fi
+            sleep 5
+          done
+          docker compose --profile api ps
+          test "$ui" = healthy
+          test "$api" = healthy
+          docker compose logs ui | grep -F "режим поиска: BM25 без моделей"
+
+      - name: Журналы контейнеров при сбое
+        if: failure()
+        run: |
+          docker compose --profile api ps -a
+          docker compose --profile api logs --no-color --tail 300
+
+      - name: Остановка
+        if: always()
+        run: docker compose --profile api down -v
+
+  full:
+    name: образ с моделями, ответ без сети (вручную)
+    if: github.event_name == 'workflow_dispatch' && inputs.full
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      PRELOAD_MODELS: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Освободить место на диске
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h /
+          free -m
+
+      - name: Сборка образа с моделями
+        run: docker compose build
+
+      - name: Модели внутри образа
+        run: |
+          docker image ls reglament-navigator
+          docker run --rm --entrypoint sh reglament-navigator:local -c 'cat /opt/models/.navigator-ready && du -sh /opt/models'
+          df -h /
+
+      - name: Плотный поиск без сети
+        run: |
+          docker run --rm --network none -e NAVIGATOR_USE_DENSE=on -e NAVIGATOR_USE_RERANKER=off reglament-navigator:local \
+            python scripts/ask.py "Как оформить служебную командировку?" --kb data/kb/org --role staff --json > ask_dense.json
+          python3 - <<'PY'
+          import json
+          text = open("ask_dense.json", encoding="utf-8").read()
+          resp = json.loads(text[text.index("{"):])
+          print("исход:", resp["outcome"], "| шагов:", len(resp["steps"]), "| эмбеддер:", resp["trace"].get("embedder"), "| время, мс:", resp["timings_ms"])
+          assert resp["trace"].get("embedder") == "BAAI/bge-m3", resp["trace"].get("embedder")
+          assert resp["outcome"] in ("answer", "partial") and resp["steps"]
+          PY
+
+      - name: Реранкер без сети (время ответа на CPU)
+        run: |
+          docker run --rm --network none -e NAVIGATOR_USE_DENSE=off -e NAVIGATOR_USE_RERANKER=on reglament-navigator:local \
+            python scripts/ask.py "Как оформить служебную командировку?" --kb data/kb/org --role staff --json > ask_rerank.json
+          python3 - <<'PY'
+          import json
+          text = open("ask_rerank.json", encoding="utf-8").read()
+          resp = json.loads(text[text.index("{"):])
+          print("исход:", resp["outcome"], "| шагов:", len(resp["steps"]), "| реранкер:", resp["trace"].get("reranker"), "| время, мс:", resp["timings_ms"])
+          assert resp["trace"].get("reranker") == "BAAI/bge-reranker-v2-m3", resp["trace"].get("reranker")
+          assert resp["outcome"] in ("answer", "partial") and resp["steps"]
+          PY

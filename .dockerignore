@@ -1,0 +1,34 @@
+# Контекст сборки: только то, что нужно образу. Всё остальное (git, окружение, видео, публичные базы) в образ не попадает.
+*
+
+# код и конфигурация
+!requirements.txt
+!requirements-lock.txt
+!navigator
+!scripts
+!.streamlit
+
+# данные, с которыми образ запускается и без compose: готовая база организаторов, её документы,
+# распознанный текст сканов, глоссарий, тест-наборы с результатами, демонстрационные приказы
+!data
+data/*
+!data/glossary.yaml
+!data/eval
+!data/demo
+!data/ocr_cache
+!data/kb
+data/kb/*
+!data/kb/org
+!data/raw
+data/raw/*
+!data/raw/org
+
+# производные и локальные файлы внутри разрешённых каталогов
+**/__pycache__
+**/*.pyc
+**/.DS_Store
+data/kb/*/index-bm25
+data/kb/*/index-hash-ngram
+data/kb/*/index-*/tokens.pkl
+data/kb/*/read_state.json
+data/kb/*.building

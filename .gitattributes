@@ -1,0 +1,26 @@
+# Окончания строк. Скрипты и файлы развёртывания всегда с LF: иначе при клонировании на Windows (core.autocrlf=true)
+# точка входа контейнера получает CRLF и sh не может её выполнить.
+* text=auto
+*.sh text eol=lf
+Dockerfile text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.py text eol=lf
+Makefile text eol=lf
+.env.example text eol=lf
+.dockerignore text eol=lf
+requirements*.txt text eol=lf
+
+# Двоичные данные: без преобразований и без текстовых сравнений
+*.pdf binary
+*.docx binary
+*.doc binary
+*.xlsx binary
+*.rtf binary
+*.odt binary
+*.npy binary
+*.pkl binary
+*.mp4 binary
+*.png binary
+*.jpg binary

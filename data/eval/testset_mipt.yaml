@@ -1,0 +1,45 @@
+# Тест-набор по публичным документам mipt.ru. gold_docs — подстроки идентификатора или заголовка документа.
+# Типы: A прямые, B многодокументные/редакции, C ролевые, D ловушки на отменённые/несуществующие, E нет в базе, F неоднозначные.
+items:
+  - {id: A01, type: A, role: student, question: "Как студенту оформить академический отпуск?", expected_outcome: answer, gold_docs: ["3909_1", "академического и других видов отпусков"]}
+  - {id: A02, type: A, role: student, question: "Какие документы нужны для академического отпуска по медицинским показаниям?", expected_outcome: answer, gold_docs: ["3909_1", "академического и других видов отпусков"]}
+  - {id: A03, type: A, role: student, question: "Как выйти из академического отпуска досрочно?", expected_outcome: answer, gold_docs: ["3909_1", "академического и других видов отпусков"]}
+  - {id: A04, type: A, role: student, question: "За что могут отчислить студента?", expected_outcome: answer, gold_docs: ["otchisleniya", "порядке отчисления"]}
+  - {id: A05, type: A, role: student, question: "Как перевестись в МФТИ из другого вуза?", expected_outcome: answer, gold_docs: ["perevoda", "перевода обучающихся"]}
+  - {id: A06, type: A, role: student, question: "Как перейти с платного обучения на бюджет?", expected_outcome: answer, gold_docs: ["platnogo_obucheniya_na_besplatnoe", "платного обучения на бесплатное"]}
+  - {id: A07, type: A, role: student, question: "Какие условия для перехода на бесплатное обучение: какие оценки нужны?", expected_outcome: answer, gold_docs: ["platnogo_obucheniya_na_besplatnoe", "платного обучения на бесплатное"]}
+  - {id: A08, type: A, role: student, question: "Как восстановиться после отчисления?", expected_outcome: answer, gold_docs: ["2642_1", "восстановлении после отчисления"]}
+  - {id: A09, type: A, role: student, question: "Как проходит защита ВКР в бакалавриате и магистратуре?", expected_outcome: answer, gold_docs: ["GIA_06386af4", "proveden", "государственной итоговой аттестации"]}
+  - {id: A10, type: A, role: student, question: "Можно ли подать апелляцию на результат государственного экзамена и в какой срок?", expected_outcome: answer, gold_docs: ["GIA", "государственной итоговой аттестации"]}
+  - {id: A11, type: A, role: student, question: "Как организуется практика студентов и кто назначает руководителя практики?", expected_outcome: answer, gold_docs: ["praktike", "практики обучающихся"]}
+  - {id: A12, type: A, role: student, question: "Какие дисциплинарные взыскания могут применить к студенту и в каком порядке?", expected_outcome: answer, gold_docs: ["857_1", "мер дисциплинарного взыскания", "дисципли"]}
+  - {id: A13, type: A, role: student, question: "Куда обратиться, если не согласен с оценкой или решением преподавателя: как работает комиссия по урегулированию споров?", expected_outcome: answer, gold_docs: ["uregulirovaniyu_sporov", "урегулированию споров"]}
+  - {id: A14, type: A, role: student, question: "Сколько раз можно пересдавать экзамен и как ликвидировать академическую задолженность?", expected_outcome: answer, gold_docs: ["tekuschem_kontrole", "текущем контроле"]}
+  - {id: A15, type: A, role: student, question: "Что запрещено студентам в учебных корпусах по правилам внутреннего распорядка?", expected_outcome: answer, gold_docs: ["rasporyadka_obuchayuschixsya", "внутреннего распорядка обучающихся"]}
+  - {id: A16, type: A, question: "Как получить скидку на платное обучение?", expected_outcome: answer, gold_docs: ["snighenii_stoimosti_platnyx_obrazovatelynyx", "снижении стоимости платных образовательных услуг"]}
+  - {id: A17, type: A, question: "Какой график учебного процесса на 2026-2027 учебный год: когда начинается осенний семестр и сессия?", expected_outcome: answer, gold_docs: ["Grafik_UP_na_sait", "2026-2027"]}
+  - {id: A18, type: A, question: "Какие персональные данные обрабатывает МФТИ и на каком основании?", expected_outcome: answer, gold_docs: ["personalynyx_dannyx", "персональных данных"]}
+  - {id: A19, type: A, role: staff, question: "Какие гарантии и льготы предусмотрены работникам коллективным договором?", expected_outcome: answer, gold_docs: ["Kollektivnyy_dogovor", "коллективный договор"]}
+  - {id: A20, type: A, question: "Как оформляется возникновение образовательных отношений при зачислении?", expected_outcome: answer, gold_docs: ["1565_1", "возникновения, приостановления и прекращения"]}
+  - {id: B01, type: B, role: student, question: "Какая стоимость обучения установлена приказом от 8 декабря 2025 г. № 6320-1 с учётом изменений?", expected_outcome: answer, gold_docs: ["6320_1", "428_1"]}
+  - {id: B02, type: B, question: "Что изменилось в графике учебного процесса 2025-2026 по приказам о внесении изменений?", expected_outcome: answer, gold_docs: ["2324_1", "1294_1", "1745_1", "635_1", "1995_1", "3962_1"]}
+  - {id: B03, type: B, question: "Как изменился состав или порядок работы комиссии по урегулированию споров после приказа № 1295-1?", expected_outcome: answer, gold_docs: ["1295_1", "uregulirovaniyu_sporov"]}
+  - {id: B04, type: B, role: student, question: "Что изменилось в правилах внутреннего распорядка обучающихся приказом № 4477-1 от 09.09.2026?", expected_outcome: answer, gold_docs: ["4477_1", "rasporyadka_obuchayuschixsya"]}
+  - {id: C01, type: C, question: "Как оформить отпуск?", expected_outcome: clarify, gold_docs: ["академического и других видов отпусков", "Kollektivnyy_dogovor", "trudovogo"]}
+  - {id: C02, type: C, role: postgraduate, question: "Как аспиранту проходит государственная итоговая аттестация?", expected_outcome: answer, gold_docs: ["GIA_v_aspiranture", "аспирантуре"]}
+  - {id: C03, type: C, role: postgraduate, question: "Какие правила приёма в аспирантуру и какие вступительные испытания?", expected_outcome: answer, gold_docs: ["priema__aspirantura", "аспирантуры", "аспирантуру"]}
+  - {id: C04, type: C, role: applicant, question: "Какие документы подавать при поступлении в бакалавриат?", expected_outcome: answer, gold_docs: ["priema__bak_i_mag", "бакалавриата"]}
+  - {id: D01, type: D, question: "Что говорит приказ № 9999-1 от 01.01.2020 о порядке командировок?", expected_outcome: refuse, gold_docs: []}
+  - {id: D02, type: D, question: "Какой порядок проведения ГИА действовал по приказу 2017 года и действует ли он сейчас?", expected_outcome: answer, gold_docs: ["GIA"]}
+  - {id: E01, type: E, role: staff, question: "Как оформить служебную командировку и получить суточные?", expected_outcome: refuse, gold_docs: []}
+  - {id: E02, type: E, role: staff, question: "Какой размер надбавки за учёную степень доктора наук?", expected_outcome: refuse, gold_docs: []}
+  - {id: E03, type: E, role: student, question: "Как получить место в общежитии и сколько стоит проживание?", expected_outcome: refuse, gold_docs: []}
+  - {id: E04, type: E, role: student, question: "Какой размер повышенной академической стипендии и как её получить?", expected_outcome: refuse, gold_docs: []}
+  - {id: E05, type: E, role: staff, question: "Как получить пропуск в кампус для гостя?", expected_outcome: refuse, gold_docs: []}
+  - {id: E06, type: E, question: "Какой порядок закупок оборудования по 223-ФЗ в МФТИ?", expected_outcome: refuse, gold_docs: []}
+  - {id: E07, type: E, role: teacher, question: "Как преподавателю пройти конкурс на замещение должности доцента?", expected_outcome: refuse, gold_docs: []}
+  - {id: E08, type: E, role: student, question: "Как оформить справку-вызов для работодателя на сессию?", expected_outcome: refuse, gold_docs: []}
+  - {id: E09, type: E, question: "Какая погода будет в Долгопрудном на выходных?", expected_outcome: out_of_scope, gold_docs: []}
+  - {id: E10, type: E, role: staff, question: "Какой порядок выплаты материальной помощи сотрудникам?", expected_outcome: refuse, gold_docs: ["Kollektivnyy_dogovor"], accept_partial: true}
+  - {id: F01, type: F, question: "Какие у меня права и обязанности по правилам внутреннего распорядка?", expected_outcome: clarify, gold_docs: ["rasporyadka"]}
+  - {id: F02, type: F, question: "Какой срок подачи заявления?", expected_outcome: clarify, gold_docs: []}

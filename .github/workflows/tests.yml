@@ -1,0 +1,24 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    name: линтер и тесты (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # минимальная поддерживаемая версия Python со свежими версиями зависимостей
+          - python: "3.11"
+            constraints: ""
+          # версия Python и зафиксированные версии зависимостей, с которыми собирается образ
+          - python: "3.13"
+            constraints: "-c requirements-lock.txt"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -r requirements.txt -e . ruff ${{ matrix.constraints }}
+      - run: ruff check navigator scripts tests
+      - run: NAVIGATOR_OCR=off NAVIGATOR_USE_DENSE=hash NAVIGATOR_USE_RERANKER=off pytest -q

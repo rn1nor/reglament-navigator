@@ -1,0 +1,585 @@
+{
+ "outcome": "cancelled_notice",
+ "question": "Что говорит приказ № 3680-1 от 23.09.2024 об изменении графика учебного процесса?",
+ "role": null,
+ "as_of": "2026-11-14",
+ "summary": "Приказ № 3680-1 от 23.09.2024 «О внесении изменений в приказ № 3026-1 от 05.08.2024 «Об утверждении графика учебного проц» — ОТМЕНЁН. Основание: Приказ № 5999-1 от 10.11.2026 «О внесении изменений в Положение о предоставлении академического и других видов отпусков о». Применимые документы: «Приказ № 3680-1 от 23.09.2024 «О внесении изменений в приказ № 3026-1 от 05.08.2024 «Об утверждении графика учебного проц»»; «Приказ № 5349 от 26.12.2023 «График учебного процесса на 2023-2024 учебный год (с изменениями и дополнениями)»». Ключевое положение: от 23.09.2024 № 3680-1\nО внесении изменений в приказ № 3026-1 от 05.08.2024 «Об утверждении графика учебного процесса на 2024-2025 учебный год» Ниже — пункты документов, относящиеся к вопросу, по каждому документу отдельно (дословные выдержки; без модели пошаговая инструкция не формируется).",
+ "steps": [
+  {
+   "text": "абз. 1: Министерство науки и высшего образования Российской Федерации\nфедеральное государственное автономное образовательное учреждение высшего образования «Московский физико-технический институт (национальный исследовательский университет)»",
+   "citations": [
+    {
+     "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+     "clause_id": "p1",
+     "quote": "Министерство науки и высшего образования Российской Федерации\nфедеральное государственное автономное образовательное учреждение высшего образования «Московский"
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 0.94 (эвристика)"
+  },
+  {
+   "text": "абз. 2: от 23.09.2024 № 3680-1\nО внесении изменений в приказ № 3026-1 от 05.08.2024 «Об утверждении графика учебного процесса на 2024-2025 учебный год»",
+   "citations": [
+    {
+     "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+     "clause_id": "p2",
+     "quote": "от 23.09.2024 № 3680-1\nО внесении изменений в приказ № 3026-1 от 05.08.2024 «Об утверждении графика учебного процесса на 2024-2025 учебный год»"
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 0.94 (эвристика)"
+  },
+  {
+   "text": "п. 2: Заведующей канцелярией М.А. Гусевой довести настоящий приказ до сведения руководителей структурных подразделений института.",
+   "citations": [
+    {
+     "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+     "clause_id": "2",
+     "quote": "Гусевой довести настоящий приказ до сведения руководителей структурных подразделений института."
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+  },
+  {
+   "text": "п. 3: Контроль исполнения настоящего приказа возложить на проректора по учебной работе А.А. Воронова.",
+   "citations": [
+    {
+     "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+     "clause_id": "3",
+     "quote": "Контроль исполнения настоящего приказа возложить на проректора по учебной работе А.А."
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+  },
+  {
+   "text": "п. 1.2: Образовательные программы, реализуемые на английском языке Документ подписан простой электронной подписью Информация о владельце: ФИО: Ливанов Дмитрий Викторович Должность: Ректор Дата подписания: 09.07.2024 13:11:11 Уникальный программный ключ: c6d909c49c1d2034fa3a0156c4eaa51e7232a3a2 2 октября – 31 декабря, 9–22 января 2 и 3 курсы в дни экзаменационной сессии; **для иностранных обучающихся визовых стран каникулы с",
+   "citations": [
+    {
+     "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+     "clause_id": "1.2",
+     "quote": "Образовательные программы, реализуемые на английском языке Документ подписан простой электронной подписью Информация о владельце: ФИО: Ливанов Дмитрий Викторови"
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+  },
+  {
+   "text": "п. 3: Шестидневная учебная неделя. Нерабочие праздничные и дополнительные выходные дни: 4 ноября, 1–8 января, 23 февраля, 8 марта, 1 мая, 9 мая, 12 июня.",
+   "citations": [
+    {
+     "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+     "clause_id": "3",
+     "quote": "Шестидневная учебная неделя."
+    }
+   ],
+   "verdict": "supported",
+   "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+  }
+ ],
+ "conditions": [],
+ "not_covered": [],
+ "documents": [
+  {
+   "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+   "title": "О внесении изменений в приказ № 3026-1 от 05.08.2024 «Об утверждении графика учебного процесса на 2024-2025 учебный год»",
+   "doc_type": "приказ",
+   "number": "3680-1",
+   "date": "2024-09-23",
+   "status": "cancelled",
+   "status_reason": "отменён: Приказ № 5999-1 от 10.11.2026 «О внесении изменений в Положение о предоставлении академического и других видов отпусков о»",
+   "amended_by": [],
+   "cancelled_by": [
+    "prikaz_demo_5999_1_izmeneniya-cde575"
+   ],
+   "source_url": "https://mipt.ru/vikon/sveden/files/rif/Prikaz_N_3680-1_ot_23.09.2024_(izmeneniya_grafika_uchebnogo_processa).pdf",
+   "source_path": "data/raw/mipt/Prikaz_N_3680-1_ot_23.09.2024__izmeneniya_grafika_uchebnogo_processa_5f5c6833.pdf",
+   "topics": [
+    "Учебный процесс и аттестация",
+    "Управление и структура"
+   ],
+   "owner_unit": "проректора по учебной работе",
+   "date_partial": false
+  },
+  {
+   "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+   "title": "График учебного процесса на 2023-2024 учебный год (с изменениями и дополнениями)",
+   "doc_type": "приказ",
+   "number": "5349",
+   "date": "2023-12-26",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/eie/Grafik_uchebnogo_processa_na_2023-2024_uchebnyi_god_s_izmeneniyami_28.06.2024.pdf",
+   "source_path": "data/raw/mipt/Grafik_uchebnogo_processa_na_2023-2024_uchebnyi_god_s_izmeneniyami_28.06.2024_0a24a5af.pdf",
+   "topics": [
+    "Учебный процесс и аттестация",
+    "Наука, аспирантура и гранты"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  }
+ ],
+ "checked_documents": [
+  {
+   "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+   "title": "О внесении изменений в приказ № 3026-1 от 05.08.2024 «Об утверждении графика учебного процесса на 2024-2025 учебный год»",
+   "doc_type": "приказ",
+   "number": "3680-1",
+   "date": "2024-09-23",
+   "status": "cancelled",
+   "status_reason": "отменён: Приказ № 5999-1 от 10.11.2026 «О внесении изменений в Положение о предоставлении академического и других видов отпусков о»",
+   "amended_by": [],
+   "cancelled_by": [
+    "prikaz_demo_5999_1_izmeneniya-cde575"
+   ],
+   "source_url": "https://mipt.ru/vikon/sveden/files/rif/Prikaz_N_3680-1_ot_23.09.2024_(izmeneniya_grafika_uchebnogo_processa).pdf",
+   "source_path": "data/raw/mipt/Prikaz_N_3680-1_ot_23.09.2024__izmeneniya_grafika_uchebnogo_processa_5f5c6833.pdf",
+   "topics": [
+    "Учебный процесс и аттестация",
+    "Управление и структура"
+   ],
+   "owner_unit": "проректора по учебной работе",
+   "date_partial": false
+  },
+  {
+   "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+   "title": "График учебного процесса на 2023-2024 учебный год (с изменениями и дополнениями)",
+   "doc_type": "приказ",
+   "number": "5349",
+   "date": "2023-12-26",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/eie/Grafik_uchebnogo_processa_na_2023-2024_uchebnyi_god_s_izmeneniyami_28.06.2024.pdf",
+   "source_path": "data/raw/mipt/Grafik_uchebnogo_processa_na_2023-2024_uchebnyi_god_s_izmeneniyami_28.06.2024_0a24a5af.pdf",
+   "topics": [
+    "Учебный процесс и аттестация",
+    "Наука, аспирантура и гранты"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  },
+  {
+   "doc_id": "prikaz_demo_5999_1_izmeneniya-cde575",
+   "title": "О внесении изменений в Положение о предоставлении академического и других видов отпусков обучающимся МФТИ (демонстрационный пример для анализа влияния)",
+   "doc_type": "приказ",
+   "number": "5999-1",
+   "date": "2026-11-10",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": null,
+   "source_path": "data/demo/prikaz_demo_5999-1_izmeneniya.txt",
+   "topics": [
+    "Движение контингента"
+   ],
+   "owner_unit": "проректора по учебной работе",
+   "date_partial": false
+  },
+  {
+   "doc_id": "prikaz_n_3962_1_ot_04_09_2025__ob_izmenenii_fbvt-23e8d3",
+   "title": "О внесении изменений в приказ № 2324-1 от 30.05.2025 «Об утверждении графика учебного процесса на 2025-2026 учебный год»",
+   "doc_type": "приказ",
+   "number": "3962-1",
+   "date": "2025-09-04",
+   "status": "active",
+   "status_reason": null,
+   "amended_by": [],
+   "cancelled_by": [],
+   "source_url": "https://mipt.ru/vikon/sveden/files/rih/Prikaz_N_3962-1_ot_04.09.2025_(ob_izmenenii_FBVT).pdf",
+   "source_path": "data/raw/mipt/Prikaz_N_3962-1_ot_04.09.2025__ob_izmenenii_FBVT_a78e2aec.pdf",
+   "topics": [
+    "Учебный процесс и аттестация"
+   ],
+   "owner_unit": null,
+   "date_partial": false
+  }
+ ],
+ "clarifying_question": null,
+ "clarifying_options": [],
+ "responsible": null,
+ "forms": [],
+ "deadlines": [],
+ "trust": {
+  "checks": [
+   {
+    "name": "Цитаты указывают на переданные пункты",
+    "passed": true,
+    "detail": "6 из 6"
+   },
+   {
+    "name": "Текст цитат совпадает с документом",
+    "passed": true,
+    "detail": "все совпали"
+   },
+   {
+    "name": "Документы действуют на дату запроса",
+    "passed": false,
+    "detail": "Приказ № 3680-1 от 23.09.2024 «О внесении изменений в приказ № 3026-1 : отменён: Приказ № 5999-1 от 10.11.2026 «О внесении изменений в Положение о предоставлении академического и других видов отпусков о»"
+   },
+   {
+    "name": "Редакция пунктов актуальна",
+    "passed": true,
+    "detail": "поправок к процитированным пунктам нет"
+   },
+   {
+    "name": "Качество распознавания текста",
+    "passed": true,
+    "detail": "текстовый слой"
+   },
+   {
+    "name": "Шаги подтверждены документами",
+    "passed": true,
+    "detail": "подтверждено 6, частично 0, отброшено 0"
+   },
+   {
+    "name": "Уверенность поиска",
+    "passed": true,
+    "detail": "rerank=0.98"
+   },
+   {
+    "name": "Противоречий с другими действующими пунктами не найдено",
+    "passed": true,
+    "detail": "по списку кандидатов паспорта базы"
+   }
+  ],
+  "supported_steps": 6,
+  "total_steps": 6,
+  "dropped_steps": [],
+  "warnings": [],
+  "verified_by_human": null
+ },
+ "trace": {
+  "provider": "mock",
+  "embedder": "BAAI/bge-m3",
+  "confidential": false,
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "query": {
+   "intent": "Что говорит приказ № 3680-1 от 23.09.2024 об изменении графика учебного процесса?",
+   "role": null,
+   "role_confidence": 0.0,
+   "mentioned_documents": [
+    "3680-1"
+   ],
+   "as_of": null,
+   "situation_dates": [
+    "2024-09-23"
+   ],
+   "reformulations": [],
+   "keywords": [
+    "говорит",
+    "приказ",
+    "3680-1",
+    "2024",
+    "изменении",
+    "графика",
+    "учебного",
+    "процесса"
+   ],
+   "out_of_scope": false,
+   "out_of_scope_reason": null
+  },
+  "queries": [
+   "Что говорит приказ № 3680-1 от 23.09.2024 об изменении графика учебного процесса?"
+  ],
+  "method": "rerank",
+  "decision": {
+   "outcome": "cancelled_notice",
+   "reason": "вопрос о документе, который отменён, заменён или истёк",
+   "gate_ok": true,
+   "gate_value": 0.9832111239433289,
+   "gate_kind": "rerank"
+  },
+  "hits": [
+   {
+    "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+    "clause_id": "p2",
+    "rrf": 0.0492,
+    "bm25": 39.41,
+    "dense": 0.73,
+    "rerank": 0.983
+   },
+   {
+    "doc_id": "prikaz_demo_5999_1_izmeneniya-cde575",
+    "clause_id": "2",
+    "rrf": 0.0269,
+    "bm25": 32.35,
+    "dense": 0.638,
+    "rerank": 0.649
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "3",
+    "rrf": 0.0237,
+    "bm25": 19.51,
+    "dense": 0.617,
+    "rerank": 0.538
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "1.2",
+    "rrf": 0.0234,
+    "bm25": 19.37,
+    "dense": 0.638,
+    "rerank": 0.523
+   },
+   {
+    "doc_id": "prikaz_n_3962_1_ot_04_09_2025__ob_izmenenii_fbvt-23e8d3",
+    "clause_id": "p2",
+    "rrf": 0.0313,
+    "bm25": 23.39,
+    "dense": 0.688,
+    "rerank": 0.21
+   },
+   {
+    "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+    "clause_id": "3",
+    "rrf": 0.0444,
+    "bm25": 22.29,
+    "dense": 0.673,
+    "rerank": 0.209
+   },
+   {
+    "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+    "clause_id": "2",
+    "rrf": 0.0421,
+    "bm25": 22.26,
+    "dense": 0.666,
+    "rerank": 0.207
+   },
+   {
+    "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+    "clause_id": "p1",
+    "rrf": 0.0423,
+    "bm25": 20.67,
+    "dense": 0.67,
+    "rerank": 0.198
+   },
+   {
+    "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+    "clause_id": "1",
+    "rrf": 0.0469,
+    "bm25": 22.88,
+    "dense": 0.695,
+    "rerank": 0.196
+   },
+   {
+    "doc_id": "prikaz_n_3962_1_ot_04_09_2025__ob_izmenenii_fbvt-23e8d3",
+    "clause_id": "p3",
+    "rrf": 0.0203,
+    "bm25": 10.83,
+    "dense": 0.663,
+    "rerank": 0.111
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "1.1",
+    "rrf": 0.0188,
+    "bm25": 13.69,
+    "dense": 0.599,
+    "rerank": 0.105
+   },
+   {
+    "doc_id": "graf_2025_2026_f5211ffe-88a885",
+    "clause_id": "p1",
+    "rrf": 0.0245,
+    "bm25": 21.1,
+    "dense": 0.605,
+    "rerank": 0.09
+   },
+   {
+    "doc_id": "prikaz_no_635_1_ot_19_02_2026_1_d18bf4c0-74d168",
+    "clause_id": "1.4",
+    "rrf": 0.0212,
+    "bm25": 10.98,
+    "dense": 0.67,
+    "rerank": 0.085
+   },
+   {
+    "doc_id": "prikaz_no_1745_1_ot_17_04_2026_c5dfe35b-240faa",
+    "clause_id": "2.4",
+    "rrf": 0.0215,
+    "bm25": 12.47,
+    "dense": 0.667,
+    "rerank": 0.082
+   },
+   {
+    "doc_id": "prikaz_no_1745_1_ot_17_04_2026_c5dfe35b-240faa",
+    "clause_id": "1.5",
+    "rrf": 0.0201,
+    "bm25": 13.86,
+    "dense": 0.644,
+    "rerank": 0.078
+   }
+  ],
+  "context_units": [
+   {
+    "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+    "clause_id": "p1",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+    "clause_id": "p2",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+    "clause_id": "1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+    "clause_id": "2",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+    "clause_id": "3",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "1.1",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "1.2",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "1.3",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "2",
+    "reason": "section"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "3",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+    "clause_id": "4",
+    "reason": "section"
+   },
+   {
+    "doc_id": "prikaz_demo_5999_1_izmeneniya-cde575",
+    "clause_id": "2",
+    "reason": "hit"
+   },
+   {
+    "doc_id": "prikaz_n_3962_1_ot_04_09_2025__ob_izmenenii_fbvt-23e8d3",
+    "clause_id": "p2",
+    "reason": "hit"
+   }
+  ],
+  "deadline_rules": [],
+  "draft": {
+   "answerable": "yes",
+   "summary": "Применимые документы: «Приказ № 3680-1 от 23.09.2024 «О внесении изменений в приказ № 3026-1 от 05.08.2024 «Об утверждении графика учебного проц»»; «Приказ № 5349 от 26.12.2023 «График учебного процесса на 2023-2024 учебный год (с изменениями и дополнениями)»». Ключевое положение: от 23.09.2024 № 3680-1\nО внесении изменений в приказ № 3026-1 от 05.08.2024 «Об утверждении графика учебного процесса на 2024-2025 учебный год» Ниже — пункты документов, относящиеся к вопросу, по каждому документу отдельно (дословные выдержки; без модели пошаговая инструкция не формируется).",
+   "applicable_documents": [
+    "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+    "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614"
+   ],
+   "steps": [
+    {
+     "text": "абз. 1: Министерство науки и высшего образования Российской Федерации\nфедеральное государственное автономное образовательное учреждение высшего образования «Московский физико-технический институт (национальный исследовательский университет)»",
+     "citations": [
+      {
+       "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+       "clause_id": "p1",
+       "quote": "Министерство науки и высшего образования Российской Федерации\nфедеральное государственное автономное образовательное учреждение высшего образования «Московский"
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 0.94 (эвристика)"
+    },
+    {
+     "text": "абз. 2: от 23.09.2024 № 3680-1\nО внесении изменений в приказ № 3026-1 от 05.08.2024 «Об утверждении графика учебного процесса на 2024-2025 учебный год»",
+     "citations": [
+      {
+       "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+       "clause_id": "p2",
+       "quote": "от 23.09.2024 № 3680-1\nО внесении изменений в приказ № 3026-1 от 05.08.2024 «Об утверждении графика учебного процесса на 2024-2025 учебный год»"
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 0.94 (эвристика)"
+    },
+    {
+     "text": "п. 2: Заведующей канцелярией М.А. Гусевой довести настоящий приказ до сведения руководителей структурных подразделений института.",
+     "citations": [
+      {
+       "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+       "clause_id": "2",
+       "quote": "Гусевой довести настоящий приказ до сведения руководителей структурных подразделений института."
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+    },
+    {
+     "text": "п. 3: Контроль исполнения настоящего приказа возложить на проректора по учебной работе А.А. Воронова.",
+     "citations": [
+      {
+       "doc_id": "prikaz_n_3680_1_ot_23_09_2024__izmeneniya_grafik-a54a8a",
+       "clause_id": "3",
+       "quote": "Контроль исполнения настоящего приказа возложить на проректора по учебной работе А.А."
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+    },
+    {
+     "text": "п. 1.2: Образовательные программы, реализуемые на английском языке Документ подписан простой электронной подписью Информация о владельце: ФИО: Ливанов Дмитрий Викторович Должность: Ректор Дата подписания: 09.07.2024 13:11:11 Уникальный программный ключ: c6d909c49c1d2034fa3a0156c4eaa51e7232a3a2 2 октября – 31 декабря, 9–22 января 2 и 3 курсы в дни экзаменационной сессии; **для иностранных обучающихся визовых стран каникулы с",
+     "citations": [
+      {
+       "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+       "clause_id": "1.2",
+       "quote": "Образовательные программы, реализуемые на английском языке Документ подписан простой электронной подписью Информация о владельце: ФИО: Ливанов Дмитрий Викторови"
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+    },
+    {
+     "text": "п. 3: Шестидневная учебная неделя. Нерабочие праздничные и дополнительные выходные дни: 4 ноября, 1–8 января, 23 февраля, 8 марта, 1 мая, 9 мая, 12 июня.",
+     "citations": [
+      {
+       "doc_id": "grafik_uchebnogo_processa_na_2023_2024_uchebnyi_-94b614",
+       "clause_id": "3",
+       "quote": "Шестидневная учебная неделя."
+      }
+     ],
+     "verdict": "supported",
+     "verdict_reason": "лексическое покрытие 1.00 (эвристика)"
+    }
+   ],
+   "conditions": [],
+   "not_covered": [],
+   "role_branches": [],
+   "clarifying_question": null,
+   "clarifying_options": [],
+   "responsible": null,
+   "forms": [],
+   "deadlines": []
+  }
+ },
+ "timings_ms": {
+  "understand": 0,
+  "retrieve": 3128,
+  "generate": 1,
+  "verify": 0
+ }
+}

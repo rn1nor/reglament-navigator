@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+logs/
+data/llm_cache.sqlite
+data/uploads/
+# публичные документы mipt.ru восстанавливаются командой make fetch
+data/raw/mipt/
+data/kb/*/index-*/tokens.pkl
+data/kb/*/read_state.json
+.env
+.DS_Store
+data/kb/*/index-bm25/
+data/kb/*/index-hash-ngram/
+data/raw/*_uploads/
+data/raw/*_web/
+data/kb/*.building/
+# документы организаторов, их база, векторы индексов и OCR-кэш включены: репозиторий закрытый, проект запускается из чистого клона
